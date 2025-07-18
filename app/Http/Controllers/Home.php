@@ -56,7 +56,7 @@ class Home extends Controller
         $rekomendasi = [];
         $destinasi = [];
         try {
-            $response = Http::get('http://localhost:5000/rekomendasi', [
+            $response = Http::get('https://produk.gigaboot.id/rekomendasi', [
                 'user' => $username
             ]);
 

@@ -1,0 +1,9 @@
+superadmin
+    create akun = kabupaten string
+
+admin kabupaten
+    akun desa = string
+
+
+kategori = destinasi
+    superadmin

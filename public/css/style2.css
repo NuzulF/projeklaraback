@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.wrapper{
+    width: 500px;
+    padding: 2rem 1rem;
+    margin: 200px auto;
+    background-color: #fff;
+    border-radius: 0px;
+    text-align: center;
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+}
+
+h2{
+    font-size: 2rem;
+    color: #000;
+    margin-bottom: 40px;
+}
+
+form input{
+    width: 92%;
+    padding: 12px 20px;
+    margin-bottom: 10px;
+    border: 1px solid #fff;
+    border-radius: 0px;
+    background-color:  #F8F8F8;
+    outline: #B8B8B8;
+}
+
+button{
+    font-size: 1rem;
+    margin-top: 1.8rem;
+    padding: 10px 0;
+    border-radius: 0px;
+    outline: none;
+    border: none;
+    width: 90%;
+    color: #fff;
+    cursor: pointer;
+    background-color: #2395FF;
+}
+
+
+button:hover{
+    background-color: #f96f59;
+}
+
+input:focus{
+    border: 1px solid #F8F8F801;
+}
+
+.recover{
+    text-align: right;
+    font-size: 0.8rem;
+    margin: 0.3rem 1.4rem 0 0;
+}
+
+.recover a{
+    text-decoration: none;
+    color: #4285F4;
+}
+
+.terms{
+    text-align: left;
+    margin-left: 22px;
+    margin-top: 1.4rem;
+}
+
+.btngoogle {
+    color: #545454;
+    margin: 0 auto;
+    display: block;
+    padding: 10px 0px;
+    border-radius: 35px;
+    background-color: #fff;
+    box-shadow: 0 0 4px rgb(209, 209, 209)
+  }
+
+  .signup-sec form .w-50 {
+    width: calc(30% - 11px) !important;
+  
+  }

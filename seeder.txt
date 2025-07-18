@@ -1,0 +1,9 @@
+IndoRegionSeeder
+Role
+Kategori
+Destinasi
+Admin
+ProfilKabupaten
+ProfilDesa
+Wahana
+Banner

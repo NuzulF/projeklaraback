@@ -3,9 +3,15 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
+<<<<<<< Updated upstream
 -- Waktu pembuatan: 21 Okt 2025 pada 17.35
 -- Versi server: 10.4.32-MariaDB
 -- Versi PHP: 8.2.12
+=======
+-- Generation Time: Apr 24, 2025 at 04:47 AM
+-- Server version: 10.4.32-MariaDB
+-- PHP Version: 8.2.12
+>>>>>>> Stashed changes
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -24,7 +30,11 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
+<<<<<<< Updated upstream
 -- Struktur dari tabel `banner`
+=======
+-- Table structure for table `banner`
+>>>>>>> Stashed changes
 --
 
 CREATE TABLE `banner` (
@@ -35,7 +45,11 @@ CREATE TABLE `banner` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
+<<<<<<< Updated upstream
 -- Dumping data untuk tabel `banner`
+=======
+-- Dumping data for table `banner`
+>>>>>>> Stashed changes
 --
 
 INSERT INTO `banner` (`id`, `gambar`, `created_at`, `updated_at`) VALUES
@@ -44,7 +58,11 @@ INSERT INTO `banner` (`id`, `gambar`, `created_at`, `updated_at`) VALUES
 -- --------------------------------------------------------
 
 --
+<<<<<<< Updated upstream
 -- Struktur dari tabel `destinasi`
+=======
+-- Table structure for table `destinasi`
+>>>>>>> Stashed changes
 --
 
 CREATE TABLE `destinasi` (
@@ -69,7 +87,11 @@ CREATE TABLE `destinasi` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
+<<<<<<< Updated upstream
 -- Dumping data untuk tabel `destinasi`
+=======
+-- Dumping data for table `destinasi`
+>>>>>>> Stashed changes
 --
 
 INSERT INTO `destinasi` (`id`, `nama_destinasi`, `kategori_id`, `foto_destinasi`, `logo`, `province_id`, `regency_id`, `district_id`, `village_id`, `deskripsi_destinasi`, `maps_destinasi`, `maps_zoom`, `alamat_destinasi`, `htm_destinasi`, `approve`, `aktif`, `created_at`, `updated_at`) VALUES
@@ -78,6 +100,7 @@ INSERT INTO `destinasi` (`id`, `nama_destinasi`, `kategori_id`, `foto_destinasi`
 (3, 'Agro Wisata Perkebunan Kopi Kandangan', 1, 'pexels2.jpg|pexels3.jpg|pexels1.jpg', 'default.png', '35', '3519', '3519060', '3519060003', 'Bagi pecinta kopi, tempat ini tidak bisa kita abaikan. Robusta Wiis, begitulah para pecinta kopi menyebutnya. Kopi ini di tanam di area perkebunan yang luasnya kurang lebih 2.500 Ha. Destinasi ini memiliki sejarah panjang sejak masa kolonial Belanda. Konon, masa itu kopi Kandangan termasuk jajaran pabrik besar di Asia Tenggara dan pasarnya sampai ke Eropa. KIni, area ini sudah berkembang menjadi destinasi wisata unggulan di Kabupaten Madiun. Kita bisa mengenang masa kejayaan perkebunan kopi Kandangan, sambil menikmati hamparan hijau sejauh mata memandang. Jika kita pagi sekali datang kesini , akan disuguhi kabut tipis putih yang menyelimuti pucuk-pucuk pohon kopi.', 'Villa Perkebunan Kopi Kandangan', 14, '6PR2+C86, Unnamed Road, Kempo, Kare, Kec. Kare, Kabupaten Madiun, Jawa Timur 63182', 5000, '1', 1, '2025-04-24 02:45:37', '2025-04-24 02:45:37'),
 (4, 'Aswin Loka Seweru', 1, 'pexels2.jpg|pexels1.jpg|pexels3.jpg', 'default.png', '35', '3519', '3519060', '3519060003', 'sarana wisata yang edukatif yang berada di Dusun Seweru Desa Kare Kare.Aswin Loka merupakan wahana belajar secara factual terhadap ekosistem lingkungan hidup yang memberikan warna dan nilai kemanusiaan.', 'Aswin Loka Seweru', 14, '7P32+86V, Branjang, Kare, Kec. Kare, Kabupaten Madiun, Jawa Timur 63182', 5000, '1', 1, '2025-04-24 02:45:37', '2025-04-24 02:45:37'),
 (5, 'Air Terjun Coban Kromo', 1, 'alam.jpg|pexels2.jpg|pexels1.jpg', 'default.png', '35', '3519', '3519060', '3519060001', 'Air Terjun Coban Kromo mempunyai dua aliran air terjun yang konon ceritanya merupakan dua jenis yang berbeda yakni laki - laki dan perempuan . Sehingga karena mitos tersebut , air terjun yang terletak di desa Bodag itu dinamakan Coban Kromo yang artinya air terjun berjodoh .', 'Air Terjun Coban Kromo', 14, 'RVQQ+JM7, Area Sawah, Pelem, Kec. Campurdarat, Kabupaten Tulungagung, Jawa Timur 66272', 5000, '1', 1, '2025-04-24 02:45:37', '2025-04-24 02:45:37'),
+<<<<<<< Updated upstream
 (6, 'Wana Wisata Selo Gedong', 1, 'pexels3.jpg|pexels1.jpg|pexels2.jpg', 'default.png', '35', '3519', '3519060', '3519060001', 'Selo yang berarti Batu, dan Gedong untuk Rumah Besar, itulah kiranya gambaran sekilas dari nama obyek wisata ini. Tatatan batu alam berukuran besar di puncak bukit, dengan panorama pemandangan yang eksotik, adalah daya tarik utama lokasi ini. Tidak hanya menawarkan sebuah pesona panorama alam, terdapat pula kedai-kedai gazebo yang siap mengobatilapar dan dahaga pengunjung. Ditemani rindang pohon pinus dengan kesegaran aromanya yang melapangkan dada, Selo Gedong menjadi tempat yang tidak akan membuat pengunjung jera untuk berkunjung kembali.', 'Wana Wisata Selo Gedong', 14, 'Area Kebun/Hutan, Bodag, Kec. Kare, Kabupaten Madiun, Jawa Timur 63182', 5000, '1', 1, '2025-04-24 02:45:37', '2025-04-24 02:45:37'),
 (7, 'Agro Wisata Amanah', 5, NULL, 'default.png', '33', NULL, NULL, NULL, 'Agrowisata Amanah merupakan wisata edukasi yang bertemakan pertanian dan peternakan organik yang terletak di Jl. Raya Tawangmangu Km. 34 Srandon, Karang, Kecamatan Karangpandan. Fasilitas lain yang tersedia Outbond, Resto, Bakery, Homestay, Meeting Room, Camping Ground, Greenhouse, Edukasi.', '-7.6318196°,111.0959171°', 14, 'Karangpandan, Kabupaten Karanganyar, jawa tengah', 0, '1', 1, '2025-10-21 15:21:29', '2025-10-21 15:21:29'),
 (8, 'Agro Wisata Bhumi Merapi', 5, NULL, 'default.png', NULL, NULL, NULL, NULL, 'Agro Wisata Bhumi Merapi adalah tempat wisata edukasi dengan tema pertanian dan peternakan. Di sini, pengunjung dapat menikmati berbagai spot foto yang Instagramable, seperti Langlang Buana yang terinspirasi dari arsitektur Eropa. Aktivitas seperti memberi makan hewan dan menikmati pemandangan Gunung Merapi menjadi daya tarik utama tempat ini​', '-7.6400756°,110.4238349°', 14, 'None, None, DIY', 0, '1', 1, '2025-10-21 15:21:29', '2025-10-21 15:21:29'),
@@ -568,11 +591,18 @@ INSERT INTO `destinasi` (`id`, `nama_destinasi`, `kategori_id`, `foto_destinasi`
 (488, 'Wisata Kuda Metro Stables', 5, NULL, 'default.png', '33', NULL, NULL, NULL, 'Metro Stables adalah peternakan kuda yang dibuka untuk umum menjadi tempat wisata kuda mulai bulan Oktober 2017. Peternakan yang mengelola kuda balap impor sejak tahun 1989 ini terletak di Jalan Langen Harjo No. 1, Duren, Bandungan, Semarang. Letak obyek wisata ini sangat strategis, 650 meter sebelum Green Valley Resort dan berjarak 2 kilometer dari Pasar Bandungan.', '-7.2282423°,110.3508754°', 14, 'Bandungan, Kabupaten Semarang, jawa tengah', 0, '1', 1, '2025-10-21 15:21:29', '2025-10-21 15:21:29'),
 (489, 'Wisata Pemandian Jolotundo', 5, NULL, 'default.png', '33', NULL, NULL, NULL, 'Petirtaan Jolotundo terletak di lereng di utara Gunung Penanggungan, Desa Seloliman, Kecamatan Trawas. Jarak dari kota Surabaya +55km, dapat di capai dengan kendaraan pribadi roda 2 maupun roda 4. Petirtaan Jolotundo merupakan bangunan petirtaan yang di buat zaman Airlangga (Kerajan Kahuripan). Candi ini merupakan monumen cinta kasih Raja Udayana untuk menyambut kelahiran anaknya, Prabu Airlangga, yang di bangun pada tahun 899 Saka. Banyak orang menyebutkan bahwa candi ini adalah tempat pertapaan Airlangga setelah mengundurkan diri dari singga sana dan di ganti anaknya. Keunikan pertitaan ini adalah debit airnya yang tidak pernah berkurang meskipun musim kemarau.', '-7.6092469°,112.5928239°', 14, 'Trawas, Kabupaten Mojokerto, jawa tengah', 0, '1', 1, '2025-10-21 15:21:29', '2025-10-21 15:21:29'),
 (490, 'Wisata Seribu Batu Songgo Langit', 5, NULL, 'default.png', NULL, NULL, NULL, NULL, 'Terletak di kawasan perbukitan, wisata ini menawarkan pemandangan alam yang memukau, termasuk hutan pinus, lembah, dan pegunungan.  Lokasi ini dikelilingi oleh pepohonan hijau yang memberikan suasana sejuk dan nyaman, ideal untuk bersantai dan melepas penat.  Di area wisata ini terdapat café yang menyajikan berbagai makanan dan minuman lokal, sehingga pengunjung dapat menikmati santapan sambil menikmati pemandangan. Tersedia berbagai wahana permainan, seperti flying fox dan ayunan yang memberikan sensasi tersendiri bagi para pengunjung. ', '-7.93071°,110.43120°', 14, 'None, None, DIY', 0, '1', 1, '2025-10-21 15:21:29', '2025-10-21 15:21:29');
+=======
+(6, 'Wana Wisata Selo Gedong', 1, 'pexels3.jpg|pexels1.jpg|pexels2.jpg', 'default.png', '35', '3519', '3519060', '3519060001', 'Selo yang berarti Batu, dan Gedong untuk Rumah Besar, itulah kiranya gambaran sekilas dari nama obyek wisata ini. Tatatan batu alam berukuran besar di puncak bukit, dengan panorama pemandangan yang eksotik, adalah daya tarik utama lokasi ini. Tidak hanya menawarkan sebuah pesona panorama alam, terdapat pula kedai-kedai gazebo yang siap mengobatilapar dan dahaga pengunjung. Ditemani rindang pohon pinus dengan kesegaran aromanya yang melapangkan dada, Selo Gedong menjadi tempat yang tidak akan membuat pengunjung jera untuk berkunjung kembali.', 'Wana Wisata Selo Gedong', 14, 'Area Kebun/Hutan, Bodag, Kec. Kare, Kabupaten Madiun, Jawa Timur 63182', 5000, '1', 1, '2025-04-24 02:45:37', '2025-04-24 02:45:37');
+>>>>>>> Stashed changes
 
 -- --------------------------------------------------------
 
 --
+<<<<<<< Updated upstream
 -- Struktur dari tabel `districts`
+=======
+-- Table structure for table `districts`
+>>>>>>> Stashed changes
 --
 
 CREATE TABLE `districts` (
@@ -582,7 +612,11 @@ CREATE TABLE `districts` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
+<<<<<<< Updated upstream
 -- Dumping data untuk tabel `districts`
+=======
+-- Dumping data for table `districts`
+>>>>>>> Stashed changes
 --
 
 INSERT INTO `districts` (`id`, `regency_id`, `name`) VALUES
@@ -7809,7 +7843,11 @@ INSERT INTO `districts` (`id`, `regency_id`, `name`) VALUES
 -- --------------------------------------------------------
 
 --
+<<<<<<< Updated upstream
 -- Struktur dari tabel `failed_jobs`
+=======
+-- Table structure for table `failed_jobs`
+>>>>>>> Stashed changes
 --
 
 CREATE TABLE `failed_jobs` (
@@ -7825,7 +7863,11 @@ CREATE TABLE `failed_jobs` (
 -- --------------------------------------------------------
 
 --
+<<<<<<< Updated upstream
 -- Struktur dari tabel `jenis_aduan`
+=======
+-- Table structure for table `jenis_aduan`
+>>>>>>> Stashed changes
 --
 
 CREATE TABLE `jenis_aduan` (
@@ -7837,7 +7879,11 @@ CREATE TABLE `jenis_aduan` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
+<<<<<<< Updated upstream
 -- Dumping data untuk tabel `jenis_aduan`
+=======
+-- Dumping data for table `jenis_aduan`
+>>>>>>> Stashed changes
 --
 
 INSERT INTO `jenis_aduan` (`id`, `nama`, `status`, `created_at`, `updated_at`) VALUES
@@ -7846,7 +7892,11 @@ INSERT INTO `jenis_aduan` (`id`, `nama`, `status`, `created_at`, `updated_at`) V
 -- --------------------------------------------------------
 
 --
+<<<<<<< Updated upstream
 -- Struktur dari tabel `jenis_pembayaran`
+=======
+-- Table structure for table `jenis_pembayaran`
+>>>>>>> Stashed changes
 --
 
 CREATE TABLE `jenis_pembayaran` (
@@ -7862,7 +7912,11 @@ CREATE TABLE `jenis_pembayaran` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
+<<<<<<< Updated upstream
 -- Dumping data untuk tabel `jenis_pembayaran`
+=======
+-- Dumping data for table `jenis_pembayaran`
+>>>>>>> Stashed changes
 --
 
 INSERT INTO `jenis_pembayaran` (`id`, `nama`, `kode`, `enabled_payment`, `identifikasi_transaksi`, `id_parent_jenis_pembayaran`, `status`, `created_at`, `updated_at`) VALUES
@@ -7891,7 +7945,11 @@ INSERT INTO `jenis_pembayaran` (`id`, `nama`, `kode`, `enabled_payment`, `identi
 -- --------------------------------------------------------
 
 --
+<<<<<<< Updated upstream
 -- Struktur dari tabel `kategori`
+=======
+-- Table structure for table `kategori`
+>>>>>>> Stashed changes
 --
 
 CREATE TABLE `kategori` (
@@ -7905,21 +7963,33 @@ CREATE TABLE `kategori` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
+<<<<<<< Updated upstream
 -- Dumping data untuk tabel `kategori`
+=======
+-- Dumping data for table `kategori`
+>>>>>>> Stashed changes
 --
 
 INSERT INTO `kategori` (`id`, `nama_kategori`, `icon`, `deskripsi`, `aktif`, `created_at`, `updated_at`) VALUES
 (1, 'DTW BUDAYA', 'fa-tree', '', 1, '2025-04-24 02:43:02', '2025-04-24 02:43:02'),
 (2, 'Alam', 'fas fa-tree', 'Wisata alam memberikan pengalaman yang luar biasa bagi pengunjung yang mencari keindahan dan ketenangan di lingkungan alami dengan destinasi yang mempesona.', 1, '2025-04-24 02:45:37', '2025-04-24 02:45:37'),
+<<<<<<< Updated upstream
 (3, 'Buatan', 'fas fa-building', 'destinasi wisata yang dibuat atau dikembangkan oleh manusia untuk menarik pengunjung dengan membangun atraksi dan fasilitas yang menarik di area yang telah diproses atau dibangun secara khusus.', 1, '2025-04-24 02:45:37', '2025-04-24 02:45:37'),
 (4, 'DTW BUDAYA', 'fa-tree', '', 1, '2025-10-21 15:21:29', '2025-10-21 15:21:29'),
 (5, 'DTW ALAM', 'fa-tree', '', 1, '2025-10-21 15:21:29', '2025-10-21 15:21:29'),
 (6, 'DTW BUATAN', 'fa-tree', '', 1, '2025-10-21 15:21:29', '2025-10-21 15:21:29');
+=======
+(3, 'Buatan', 'fas fa-building', 'destinasi wisata yang dibuat atau dikembangkan oleh manusia untuk menarik pengunjung dengan membangun atraksi dan fasilitas yang menarik di area yang telah diproses atau dibangun secara khusus.', 1, '2025-04-24 02:45:37', '2025-04-24 02:45:37');
+>>>>>>> Stashed changes
 
 -- --------------------------------------------------------
 
 --
+<<<<<<< Updated upstream
 -- Struktur dari tabel `keranjang`
+=======
+-- Table structure for table `keranjang`
+>>>>>>> Stashed changes
 --
 
 CREATE TABLE `keranjang` (
@@ -7937,7 +8007,11 @@ CREATE TABLE `keranjang` (
 -- --------------------------------------------------------
 
 --
+<<<<<<< Updated upstream
 -- Struktur dari tabel `keranjang_item`
+=======
+-- Table structure for table `keranjang_item`
+>>>>>>> Stashed changes
 --
 
 CREATE TABLE `keranjang_item` (
@@ -7955,7 +8029,11 @@ CREATE TABLE `keranjang_item` (
 -- --------------------------------------------------------
 
 --
+<<<<<<< Updated upstream
 -- Struktur dari tabel `k 巴士`
+=======
+-- Table structure for table `k 巴士`
+>>>>>>> Stashed changes
 --
 
 CREATE TABLE `k 巴士` (
@@ -7966,7 +8044,11 @@ CREATE TABLE `k 巴士` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
+<<<<<<< Updated upstream
 -- Dumping data untuk tabel `k 巴士`
+=======
+-- Dumping data for table `k 巴士`
+>>>>>>> Stashed changes
 --
 
 INSERT INTO `k 巴士` (`id`, `nama_kategori`, `created_at`, `updated_at`) VALUES
@@ -7975,7 +8057,11 @@ INSERT INTO `k 巴士` (`id`, `nama_kategori`, `created_at`, `updated_at`) VALUE
 -- --------------------------------------------------------
 
 --
+<<<<<<< Updated upstream
 -- Struktur dari tabel `migrations`
+=======
+-- Table structure for table `migrations`
+>>>>>>> Stashed changes
 --
 
 CREATE TABLE `migrations` (
@@ -7985,7 +8071,11 @@ CREATE TABLE `migrations` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
+<<<<<<< Updated upstream
 -- Dumping data untuk tabel `migrations`
+=======
+-- Dumping data for table `migrations`
+>>>>>>> Stashed changes
 --
 
 INSERT INTO `migrations` (`id`, `migration`, `batch`) VALUES
@@ -8039,7 +8129,11 @@ INSERT INTO `migrations` (`id`, `migration`, `batch`) VALUES
 -- --------------------------------------------------------
 
 --
+<<<<<<< Updated upstream
 -- Struktur dari tabel `paket`
+=======
+-- Table structure for table `paket`
+>>>>>>> Stashed changes
 --
 
 CREATE TABLE `paket` (
@@ -8054,7 +8148,11 @@ CREATE TABLE `paket` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
+<<<<<<< Updated upstream
 -- Dumping data untuk tabel `paket`
+=======
+-- Dumping data for table `paket`
+>>>>>>> Stashed changes
 --
 
 INSERT INTO `paket` (`id`, `nama_paket`, `harga_paket`, `jenis`, `aktif`, `created_at`, `updated_at`, `destinasi_id`) VALUES
@@ -8070,7 +8168,11 @@ INSERT INTO `paket` (`id`, `nama_paket`, `harga_paket`, `jenis`, `aktif`, `creat
 -- --------------------------------------------------------
 
 --
+<<<<<<< Updated upstream
 -- Struktur dari tabel `paket_destinasi`
+=======
+-- Table structure for table `paket_destinasi`
+>>>>>>> Stashed changes
 --
 
 CREATE TABLE `paket_destinasi` (
@@ -8082,7 +8184,11 @@ CREATE TABLE `paket_destinasi` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
+<<<<<<< Updated upstream
 -- Dumping data untuk tabel `paket_destinasi`
+=======
+-- Dumping data for table `paket_destinasi`
+>>>>>>> Stashed changes
 --
 
 INSERT INTO `paket_destinasi` (`id`, `destinasi_id`, `paket_id`, `created_at`, `updated_at`) VALUES
@@ -8095,7 +8201,11 @@ INSERT INTO `paket_destinasi` (`id`, `destinasi_id`, `paket_id`, `created_at`, `
 -- --------------------------------------------------------
 
 --
+<<<<<<< Updated upstream
 -- Struktur dari tabel `paket_wahana`
+=======
+-- Table structure for table `paket_wahana`
+>>>>>>> Stashed changes
 --
 
 CREATE TABLE `paket_wahana` (
@@ -8107,7 +8217,11 @@ CREATE TABLE `paket_wahana` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
+<<<<<<< Updated upstream
 -- Dumping data untuk tabel `paket_wahana`
+=======
+-- Dumping data for table `paket_wahana`
+>>>>>>> Stashed changes
 --
 
 INSERT INTO `paket_wahana` (`id`, `wahana_id`, `paket_id`, `created_at`, `updated_at`) VALUES
@@ -8124,7 +8238,11 @@ INSERT INTO `paket_wahana` (`id`, `wahana_id`, `paket_id`, `created_at`, `update
 -- --------------------------------------------------------
 
 --
+<<<<<<< Updated upstream
 -- Struktur dari tabel `password_resets`
+=======
+-- Table structure for table `password_resets`
+>>>>>>> Stashed changes
 --
 
 CREATE TABLE `password_resets` (
@@ -8136,7 +8254,11 @@ CREATE TABLE `password_resets` (
 -- --------------------------------------------------------
 
 --
+<<<<<<< Updated upstream
 -- Struktur dari tabel `personal_access_tokens`
+=======
+-- Table structure for table `personal_access_tokens`
+>>>>>>> Stashed changes
 --
 
 CREATE TABLE `personal_access_tokens` (
@@ -8155,7 +8277,11 @@ CREATE TABLE `personal_access_tokens` (
 -- --------------------------------------------------------
 
 --
+<<<<<<< Updated upstream
 -- Struktur dari tabel `profil_desa`
+=======
+-- Table structure for table `profil_desa`
+>>>>>>> Stashed changes
 --
 
 CREATE TABLE `profil_desa` (
@@ -8174,7 +8300,11 @@ CREATE TABLE `profil_desa` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
+<<<<<<< Updated upstream
 -- Dumping data untuk tabel `profil_desa`
+=======
+-- Dumping data for table `profil_desa`
+>>>>>>> Stashed changes
 --
 
 INSERT INTO `profil_desa` (`id`, `nama_desa`, `foto_desa`, `deskripsi_desa`, `alamat_desa`, `admin_id`, `province_id`, `regency_id`, `district_id`, `village_id`, `created_at`, `updated_at`) VALUES
@@ -8192,7 +8322,11 @@ INSERT INTO `profil_desa` (`id`, `nama_desa`, `foto_desa`, `deskripsi_desa`, `al
 -- --------------------------------------------------------
 
 --
+<<<<<<< Updated upstream
 -- Struktur dari tabel `profil_kabupaten`
+=======
+-- Table structure for table `profil_kabupaten`
+>>>>>>> Stashed changes
 --
 
 CREATE TABLE `profil_kabupaten` (
@@ -8207,7 +8341,11 @@ CREATE TABLE `profil_kabupaten` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
+<<<<<<< Updated upstream
 -- Dumping data untuk tabel `profil_kabupaten`
+=======
+-- Dumping data for table `profil_kabupaten`
+>>>>>>> Stashed changes
 --
 
 INSERT INTO `profil_kabupaten` (`id`, `nama_kabupaten`, `foto_kabupaten`, `admin_id`, `province_id`, `regency_id`, `created_at`, `updated_at`) VALUES
@@ -8219,7 +8357,11 @@ INSERT INTO `profil_kabupaten` (`id`, `nama_kabupaten`, `foto_kabupaten`, `admin
 -- --------------------------------------------------------
 
 --
+<<<<<<< Updated upstream
 -- Struktur dari tabel `provinces`
+=======
+-- Table structure for table `provinces`
+>>>>>>> Stashed changes
 --
 
 CREATE TABLE `provinces` (
@@ -8228,7 +8370,11 @@ CREATE TABLE `provinces` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
+<<<<<<< Updated upstream
 -- Dumping data untuk tabel `provinces`
+=======
+-- Dumping data for table `provinces`
+>>>>>>> Stashed changes
 --
 
 INSERT INTO `provinces` (`id`, `name`) VALUES
@@ -8265,14 +8411,22 @@ INSERT INTO `provinces` (`id`, `name`) VALUES
 ('81', 'MALUKU'),
 ('82', 'MALUKU UTARA'),
 ('91', 'PAPUA BARAT'),
+<<<<<<< Updated upstream
 ('94', 'PAPUA'),
 ('33', 'jawa tengah'),
 ('', 'DIY');
+=======
+('94', 'PAPUA');
+>>>>>>> Stashed changes
 
 -- --------------------------------------------------------
 
 --
+<<<<<<< Updated upstream
 -- Struktur dari tabel `regencies`
+=======
+-- Table structure for table `regencies`
+>>>>>>> Stashed changes
 --
 
 CREATE TABLE `regencies` (
@@ -8282,7 +8436,11 @@ CREATE TABLE `regencies` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
+<<<<<<< Updated upstream
 -- Dumping data untuk tabel `regencies`
+=======
+-- Dumping data for table `regencies`
+>>>>>>> Stashed changes
 --
 
 INSERT INTO `regencies` (`id`, `province_id`, `name`) VALUES
@@ -8799,6 +8957,7 @@ INSERT INTO `regencies` (`id`, `province_id`, `name`) VALUES
 ('9434', '94', 'KABUPATEN DOGIYAI'),
 ('9435', '94', 'KABUPATEN INTAN JAYA'),
 ('9436', '94', 'KABUPATEN DEIYAI'),
+<<<<<<< Updated upstream
 ('9471', '94', 'KOTA JAYAPURA'),
 ('3309', '33', 'Magelang'),
 ('', '33', 'Klaten'),
@@ -8880,11 +9039,18 @@ INSERT INTO `regencies` (`id`, `province_id`, `name`) VALUES
 ('', '33', 'sleman'),
 ('', '33', 'Kabupaten Batang'),
 ('', '', '');
+=======
+('9471', '94', 'KOTA JAYAPURA');
+>>>>>>> Stashed changes
 
 -- --------------------------------------------------------
 
 --
+<<<<<<< Updated upstream
 -- Struktur dari tabel `reply_aduan`
+=======
+-- Table structure for table `reply_aduan`
+>>>>>>> Stashed changes
 --
 
 CREATE TABLE `reply_aduan` (
@@ -8899,7 +9065,11 @@ CREATE TABLE `reply_aduan` (
 -- --------------------------------------------------------
 
 --
+<<<<<<< Updated upstream
 -- Struktur dari tabel `reschedule`
+=======
+-- Table structure for table `reschedule`
+>>>>>>> Stashed changes
 --
 
 CREATE TABLE `reschedule` (
@@ -8920,7 +9090,11 @@ CREATE TABLE `reschedule` (
 -- --------------------------------------------------------
 
 --
+<<<<<<< Updated upstream
 -- Struktur dari tabel `review`
+=======
+-- Table structure for table `review`
+>>>>>>> Stashed changes
 --
 
 CREATE TABLE `review` (
@@ -8936,6 +9110,7 @@ CREATE TABLE `review` (
   `updated_at` datetime DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
+<<<<<<< Updated upstream
 --
 -- Dumping data untuk tabel `review`
 --
@@ -37201,6 +37376,12 @@ INSERT INTO `review` (`id`, `destinasi_id`, `reviewer_id`, `review_text`, `tangg
 
 --
 -- Struktur dari tabel `riwayat_edit`
+=======
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `riwayat_edit`
+>>>>>>> Stashed changes
 --
 
 CREATE TABLE `riwayat_edit` (
@@ -37216,7 +37397,11 @@ CREATE TABLE `riwayat_edit` (
 -- --------------------------------------------------------
 
 --
+<<<<<<< Updated upstream
 -- Struktur dari tabel `role`
+=======
+-- Table structure for table `role`
+>>>>>>> Stashed changes
 --
 
 CREATE TABLE `role` (
@@ -37227,7 +37412,11 @@ CREATE TABLE `role` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
+<<<<<<< Updated upstream
 -- Dumping data untuk tabel `role`
+=======
+-- Dumping data for table `role`
+>>>>>>> Stashed changes
 --
 
 INSERT INTO `role` (`id`, `nama_role`, `created_at`, `updated_at`) VALUES
@@ -37240,7 +37429,11 @@ INSERT INTO `role` (`id`, `nama_role`, `created_at`, `updated_at`) VALUES
 -- --------------------------------------------------------
 
 --
+<<<<<<< Updated upstream
 -- Struktur dari tabel `social_accounts`
+=======
+-- Table structure for table `social_accounts`
+>>>>>>> Stashed changes
 --
 
 CREATE TABLE `social_accounts` (
@@ -37255,7 +37448,11 @@ CREATE TABLE `social_accounts` (
 -- --------------------------------------------------------
 
 --
+<<<<<<< Updated upstream
 -- Struktur dari tabel `status_keranjang`
+=======
+-- Table structure for table `status_keranjang`
+>>>>>>> Stashed changes
 --
 
 CREATE TABLE `status_keranjang` (
@@ -37266,7 +37463,11 @@ CREATE TABLE `status_keranjang` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
+<<<<<<< Updated upstream
 -- Dumping data untuk tabel `status_keranjang`
+=======
+-- Dumping data for table `status_keranjang`
+>>>>>>> Stashed changes
 --
 
 INSERT INTO `status_keranjang` (`id`, `status`, `created_at`, `updated_at`) VALUES
@@ -37277,7 +37478,11 @@ INSERT INTO `status_keranjang` (`id`, `status`, `created_at`, `updated_at`) VALU
 -- --------------------------------------------------------
 
 --
+<<<<<<< Updated upstream
 -- Struktur dari tabel `status_tiket`
+=======
+-- Table structure for table `status_tiket`
+>>>>>>> Stashed changes
 --
 
 CREATE TABLE `status_tiket` (
@@ -37292,7 +37497,11 @@ CREATE TABLE `status_tiket` (
 -- --------------------------------------------------------
 
 --
+<<<<<<< Updated upstream
 -- Struktur dari tabel `tikets`
+=======
+-- Table structure for table `tikets`
+>>>>>>> Stashed changes
 --
 
 CREATE TABLE `tikets` (
@@ -37305,7 +37514,11 @@ CREATE TABLE `tikets` (
 -- --------------------------------------------------------
 
 --
+<<<<<<< Updated upstream
 -- Struktur dari tabel `transaksi`
+=======
+-- Table structure for table `transaksi`
+>>>>>>> Stashed changes
 --
 
 CREATE TABLE `transaksi` (
@@ -37325,7 +37538,11 @@ CREATE TABLE `transaksi` (
 -- --------------------------------------------------------
 
 --
+<<<<<<< Updated upstream
 -- Struktur dari tabel `transaksi_keranjang`
+=======
+-- Table structure for table `transaksi_keranjang`
+>>>>>>> Stashed changes
 --
 
 CREATE TABLE `transaksi_keranjang` (
@@ -37339,7 +37556,11 @@ CREATE TABLE `transaksi_keranjang` (
 -- --------------------------------------------------------
 
 --
+<<<<<<< Updated upstream
 -- Struktur dari tabel `users`
+=======
+-- Table structure for table `users`
+>>>>>>> Stashed changes
 --
 
 CREATE TABLE `users` (
@@ -37369,7 +37590,11 @@ CREATE TABLE `users` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
+<<<<<<< Updated upstream
 -- Dumping data untuk tabel `users`
+=======
+-- Dumping data for table `users`
+>>>>>>> Stashed changes
 --
 
 INSERT INTO `users` (`id`, `name`, `email`, `email_verified_at`, `password`, `verifikasi_token`, `forgot_password_token`, `phone`, `role_id`, `province_id`, `regency_id`, `district_id`, `village_id`, `destinasi_id`, `aktif`, `edit_admin_desa`, `approve_wisata`, `tambah_edit_admin_destinasi`, `mengajukan_destinasi`, `konfirmasi_tiket`, `remember_token`, `created_at`, `updated_at`) VALUES
@@ -37394,6 +37619,7 @@ INSERT INTO `users` (`id`, `name`, `email`, `email_verified_at`, `password`, `ve
 (19, 'Aswin Loka Seweru', 'aswinlokaseweru@gmail.com', NULL, '$2y$10$mpci/wKZnDz2eenSqV2Xo.km8jNjg7M6tf6nKjY0F/9ULGVyfto1O', NULL, NULL, '081234567890', 4, '35', '3519', '3519060', '3519060003', 4, 1, '0', '0', '0', '0', '1', NULL, '2025-04-24 02:45:39', '2025-04-24 02:45:39'),
 (20, 'Air Terjun Coban Kromo', 'cobankromo@gmail.com', NULL, '$2y$10$ngt6YmX/XPB6kf6kPwwrN.diwK.cR1aiqj0sCs2KK8hJg47TyokMm', NULL, NULL, '081234567890', 4, '35', '3519', '3519060', '3519060001', 5, 1, '0', '0', '0', '0', '1', NULL, '2025-04-24 02:45:39', '2025-04-24 02:45:39'),
 (21, 'Wana Wisata Selo Gedong', 'selogedong@gmail.com', NULL, '$2y$10$Mv.6yrDqdzk8KccpItOkie4Ar81dWelOGSeECKQCGasz.ZEXEPPT.', NULL, NULL, '081234567890', 4, '35', '3519', '3519060', '3519060001', 6, 1, '0', '0', '0', '0', '1', NULL, '2025-04-24 02:45:39', '2025-04-24 02:45:39'),
+<<<<<<< Updated upstream
 (22, 'User 1', 'user@gmail.com', NULL, '$2y$10$o2RG6aG5I46j7WMJdtWhM.Et/5WzS9ahaCifklRVAeZyDUXz1Xj2u', NULL, NULL, '081234567890', 5, NULL, NULL, NULL, NULL, NULL, 1, '0', '0', '0', '0', '0', NULL, '2025-04-24 02:45:39', '2025-04-24 02:45:39'),
 (23, 'reviewer1', NULL, NULL, NULL, NULL, NULL, NULL, 5, NULL, NULL, NULL, NULL, NULL, 1, '0', '0', '0', '0', '0', NULL, '2025-10-21 15:21:29', '2025-10-21 15:21:29'),
 (24, 'reviewer2', NULL, NULL, NULL, NULL, NULL, NULL, 5, NULL, NULL, NULL, NULL, NULL, 1, '0', '0', '0', '0', '0', NULL, '2025-10-21 15:21:29', '2025-10-21 15:21:29'),
@@ -44603,11 +44829,18 @@ INSERT INTO `users` (`id`, `name`, `email`, `email_verified_at`, `password`, `ve
 (7204, 'reviewer7182', NULL, NULL, NULL, NULL, NULL, NULL, 5, NULL, NULL, NULL, NULL, NULL, 1, '0', '0', '0', '0', '0', NULL, '2025-10-21 15:21:29', '2025-10-21 15:21:29'),
 (7205, 'reviewer7183', NULL, NULL, NULL, NULL, NULL, NULL, 5, NULL, NULL, NULL, NULL, NULL, 1, '0', '0', '0', '0', '0', NULL, '2025-10-21 15:21:29', '2025-10-21 15:21:29'),
 (7206, 'reviewer7184', NULL, NULL, NULL, NULL, NULL, NULL, 5, NULL, NULL, NULL, NULL, NULL, 1, '0', '0', '0', '0', '0', NULL, '2025-10-21 15:21:29', '2025-10-21 15:21:29');
+=======
+(22, 'User 1', 'user@gmail.com', NULL, '$2y$10$o2RG6aG5I46j7WMJdtWhM.Et/5WzS9ahaCifklRVAeZyDUXz1Xj2u', NULL, NULL, '081234567890', 5, NULL, NULL, NULL, NULL, NULL, 1, '0', '0', '0', '0', '0', NULL, '2025-04-24 02:45:39', '2025-04-24 02:45:39');
+>>>>>>> Stashed changes
 
 -- --------------------------------------------------------
 
 --
+<<<<<<< Updated upstream
 -- Struktur dari tabel `villages`
+=======
+-- Table structure for table `villages`
+>>>>>>> Stashed changes
 --
 
 CREATE TABLE `villages` (
@@ -44617,7 +44850,11 @@ CREATE TABLE `villages` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
+<<<<<<< Updated upstream
 -- Dumping data untuk tabel `villages`
+=======
+-- Dumping data for table `villages`
+>>>>>>> Stashed changes
 --
 
 INSERT INTO `villages` (`id`, `district_id`, `name`) VALUES
@@ -125221,7 +125458,11 @@ INSERT INTO `villages` (`id`, `district_id`, `name`) VALUES
 -- --------------------------------------------------------
 
 --
+<<<<<<< Updated upstream
 -- Struktur dari tabel `wahana`
+=======
+-- Table structure for table `wahana`
+>>>>>>> Stashed changes
 --
 
 CREATE TABLE `wahana` (
@@ -125237,7 +125478,11 @@ CREATE TABLE `wahana` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
+<<<<<<< Updated upstream
 -- Dumping data untuk tabel `wahana`
+=======
+-- Dumping data for table `wahana`
+>>>>>>> Stashed changes
 --
 
 INSERT INTO `wahana` (`id`, `nama_wahana`, `foto_wahana`, `htm_wahana`, `deskripsi_wahana`, `destinasi_id`, `aktif`, `created_at`, `updated_at`) VALUES
@@ -125256,13 +125501,21 @@ INSERT INTO `wahana` (`id`, `nama_wahana`, `foto_wahana`, `htm_wahana`, `deskrip
 --
 
 --
+<<<<<<< Updated upstream
 -- Indeks untuk tabel `banner`
+=======
+-- Indexes for table `banner`
+>>>>>>> Stashed changes
 --
 ALTER TABLE `banner`
   ADD PRIMARY KEY (`id`);
 
 --
+<<<<<<< Updated upstream
 -- Indeks untuk tabel `destinasi`
+=======
+-- Indexes for table `destinasi`
+>>>>>>> Stashed changes
 --
 ALTER TABLE `destinasi`
   ADD PRIMARY KEY (`id`),
@@ -125273,40 +125526,64 @@ ALTER TABLE `destinasi`
   ADD KEY `destinasi_province_id_foreign` (`province_id`);
 
 --
+<<<<<<< Updated upstream
 -- Indeks untuk tabel `districts`
+=======
+-- Indexes for table `districts`
+>>>>>>> Stashed changes
 --
 ALTER TABLE `districts`
   ADD KEY `districts_regency_id_foreign` (`regency_id`),
   ADD KEY `districts_id_index` (`id`);
 
 --
+<<<<<<< Updated upstream
 -- Indeks untuk tabel `failed_jobs`
+=======
+-- Indexes for table `failed_jobs`
+>>>>>>> Stashed changes
 --
 ALTER TABLE `failed_jobs`
   ADD PRIMARY KEY (`id`),
   ADD UNIQUE KEY `failed_jobs_uuid_unique` (`uuid`);
 
 --
+<<<<<<< Updated upstream
 -- Indeks untuk tabel `jenis_aduan`
+=======
+-- Indexes for table `jenis_aduan`
+>>>>>>> Stashed changes
 --
 ALTER TABLE `jenis_aduan`
   ADD PRIMARY KEY (`id`);
 
 --
+<<<<<<< Updated upstream
 -- Indeks untuk tabel `jenis_pembayaran`
+=======
+-- Indexes for table `jenis_pembayaran`
+>>>>>>> Stashed changes
 --
 ALTER TABLE `jenis_pembayaran`
   ADD PRIMARY KEY (`id`),
   ADD KEY `jenis_pembayaran_id_parent_jenis_pembayaran_foreign` (`id_parent_jenis_pembayaran`);
 
 --
+<<<<<<< Updated upstream
 -- Indeks untuk tabel `kategori`
+=======
+-- Indexes for table `kategori`
+>>>>>>> Stashed changes
 --
 ALTER TABLE `kategori`
   ADD PRIMARY KEY (`id`);
 
 --
+<<<<<<< Updated upstream
 -- Indeks untuk tabel `keranjang`
+=======
+-- Indexes for table `keranjang`
+>>>>>>> Stashed changes
 --
 ALTER TABLE `keranjang`
   ADD PRIMARY KEY (`id`),
@@ -125314,7 +125591,11 @@ ALTER TABLE `keranjang`
   ADD KEY `keranjang_status_id_foreign` (`status_id`);
 
 --
+<<<<<<< Updated upstream
 -- Indeks untuk tabel `keranjang_item`
+=======
+-- Indexes for table `keranjang_item`
+>>>>>>> Stashed changes
 --
 ALTER TABLE `keranjang_item`
   ADD PRIMARY KEY (`id`),
@@ -125325,20 +125606,32 @@ ALTER TABLE `keranjang_item`
   ADD KEY `keranjang_item_tikets_id_foreign` (`tikets_id`);
 
 --
+<<<<<<< Updated upstream
 -- Indeks untuk tabel `migrations`
+=======
+-- Indexes for table `migrations`
+>>>>>>> Stashed changes
 --
 ALTER TABLE `migrations`
   ADD PRIMARY KEY (`id`);
 
 --
+<<<<<<< Updated upstream
 -- Indeks untuk tabel `paket`
+=======
+-- Indexes for table `paket`
+>>>>>>> Stashed changes
 --
 ALTER TABLE `paket`
   ADD PRIMARY KEY (`id`),
   ADD KEY `paket_destinasi_id_foreign` (`destinasi_id`);
 
 --
+<<<<<<< Updated upstream
 -- Indeks untuk tabel `paket_destinasi`
+=======
+-- Indexes for table `paket_destinasi`
+>>>>>>> Stashed changes
 --
 ALTER TABLE `paket_destinasi`
   ADD PRIMARY KEY (`id`),
@@ -125346,7 +125639,11 @@ ALTER TABLE `paket_destinasi`
   ADD KEY `paket_destinasi_destinasi_id_foreign` (`destinasi_id`);
 
 --
+<<<<<<< Updated upstream
 -- Indeks untuk tabel `paket_wahana`
+=======
+-- Indexes for table `paket_wahana`
+>>>>>>> Stashed changes
 --
 ALTER TABLE `paket_wahana`
   ADD PRIMARY KEY (`id`),
@@ -125354,13 +125651,21 @@ ALTER TABLE `paket_wahana`
   ADD KEY `paket_wahana_paket_id_foreign` (`paket_id`);
 
 --
+<<<<<<< Updated upstream
 -- Indeks untuk tabel `password_resets`
+=======
+-- Indexes for table `password_resets`
+>>>>>>> Stashed changes
 --
 ALTER TABLE `password_resets`
   ADD PRIMARY KEY (`email`);
 
 --
+<<<<<<< Updated upstream
 -- Indeks untuk tabel `personal_access_tokens`
+=======
+-- Indexes for table `personal_access_tokens`
+>>>>>>> Stashed changes
 --
 ALTER TABLE `personal_access_tokens`
   ADD PRIMARY KEY (`id`),
@@ -125368,7 +125673,11 @@ ALTER TABLE `personal_access_tokens`
   ADD KEY `personal_access_tokens_tokenable_type_tokenable_id_index` (`tokenable_type`,`tokenable_id`);
 
 --
+<<<<<<< Updated upstream
 -- Indeks untuk tabel `profil_desa`
+=======
+-- Indexes for table `profil_desa`
+>>>>>>> Stashed changes
 --
 ALTER TABLE `profil_desa`
   ADD PRIMARY KEY (`id`),
@@ -125378,7 +125687,11 @@ ALTER TABLE `profil_desa`
   ADD KEY `profil_desa_village_id_foreign` (`village_id`);
 
 --
+<<<<<<< Updated upstream
 -- Indeks untuk tabel `profil_kabupaten`
+=======
+-- Indexes for table `profil_kabupaten`
+>>>>>>> Stashed changes
 --
 ALTER TABLE `profil_kabupaten`
   ADD PRIMARY KEY (`id`),
@@ -125386,20 +125699,32 @@ ALTER TABLE `profil_kabupaten`
   ADD KEY `profil_kabupaten_regency_id_foreign` (`regency_id`);
 
 --
+<<<<<<< Updated upstream
 -- Indeks untuk tabel `provinces`
+=======
+-- Indexes for table `provinces`
+>>>>>>> Stashed changes
 --
 ALTER TABLE `provinces`
   ADD KEY `provinces_id_index` (`id`);
 
 --
+<<<<<<< Updated upstream
 -- Indeks untuk tabel `regencies`
+=======
+-- Indexes for table `regencies`
+>>>>>>> Stashed changes
 --
 ALTER TABLE `regencies`
   ADD KEY `regencies_province_id_foreign` (`province_id`),
   ADD KEY `regencies_id_index` (`id`);
 
 --
+<<<<<<< Updated upstream
 -- Indeks untuk tabel `reply_aduan`
+=======
+-- Indexes for table `reply_aduan`
+>>>>>>> Stashed changes
 --
 ALTER TABLE `reply_aduan`
   ADD PRIMARY KEY (`id`),
@@ -125407,7 +125732,11 @@ ALTER TABLE `reply_aduan`
   ADD KEY `reply_aduan_reschedule_id_foreign` (`reschedule_id`);
 
 --
+<<<<<<< Updated upstream
 -- Indeks untuk tabel `reschedule`
+=======
+-- Indexes for table `reschedule`
+>>>>>>> Stashed changes
 --
 ALTER TABLE `reschedule`
   ADD PRIMARY KEY (`id`),
@@ -125417,7 +125746,11 @@ ALTER TABLE `reschedule`
   ADD KEY `reschedule_keranjang_id_foreign` (`keranjang_id`);
 
 --
+<<<<<<< Updated upstream
 -- Indeks untuk tabel `review`
+=======
+-- Indexes for table `review`
+>>>>>>> Stashed changes
 --
 ALTER TABLE `review`
   ADD PRIMARY KEY (`id`),
@@ -125425,20 +125758,32 @@ ALTER TABLE `review`
   ADD KEY `reviewer_id` (`reviewer_id`);
 
 --
+<<<<<<< Updated upstream
 -- Indeks untuk tabel `riwayat_edit`
+=======
+-- Indexes for table `riwayat_edit`
+>>>>>>> Stashed changes
 --
 ALTER TABLE `riwayat_edit`
   ADD PRIMARY KEY (`id`),
   ADD KEY `riwayat_edit_admin_id_foreign` (`admin_id`);
 
 --
+<<<<<<< Updated upstream
 -- Indeks untuk tabel `role`
+=======
+-- Indexes for table `role`
+>>>>>>> Stashed changes
 --
 ALTER TABLE `role`
   ADD PRIMARY KEY (`id`);
 
 --
+<<<<<<< Updated upstream
 -- Indeks untuk tabel `social_accounts`
+=======
+-- Indexes for table `social_accounts`
+>>>>>>> Stashed changes
 --
 ALTER TABLE `social_accounts`
   ADD PRIMARY KEY (`id`),
@@ -125446,13 +125791,21 @@ ALTER TABLE `social_accounts`
   ADD KEY `social_accounts_user_id_foreign` (`user_id`);
 
 --
+<<<<<<< Updated upstream
 -- Indeks untuk tabel `status_keranjang`
+=======
+-- Indexes for table `status_keranjang`
+>>>>>>> Stashed changes
 --
 ALTER TABLE `status_keranjang`
   ADD PRIMARY KEY (`id`);
 
 --
+<<<<<<< Updated upstream
 -- Indeks untuk tabel `status_tiket`
+=======
+-- Indexes for table `status_tiket`
+>>>>>>> Stashed changes
 --
 ALTER TABLE `status_tiket`
   ADD PRIMARY KEY (`id`),
@@ -125460,13 +125813,21 @@ ALTER TABLE `status_tiket`
   ADD KEY `status_tiket_wahana_id_foreign` (`wahana_id`);
 
 --
+<<<<<<< Updated upstream
 -- Indeks untuk tabel `tikets`
+=======
+-- Indexes for table `tikets`
+>>>>>>> Stashed changes
 --
 ALTER TABLE `tikets`
   ADD PRIMARY KEY (`id`);
 
 --
+<<<<<<< Updated upstream
 -- Indeks untuk tabel `transaksi`
+=======
+-- Indexes for table `transaksi`
+>>>>>>> Stashed changes
 --
 ALTER TABLE `transaksi`
   ADD PRIMARY KEY (`id`),
@@ -125475,7 +125836,11 @@ ALTER TABLE `transaksi`
   ADD KEY `transaksi_jenis_pembayaran_id_foreign` (`jenis_pembayaran_id`);
 
 --
+<<<<<<< Updated upstream
 -- Indeks untuk tabel `transaksi_keranjang`
+=======
+-- Indexes for table `transaksi_keranjang`
+>>>>>>> Stashed changes
 --
 ALTER TABLE `transaksi_keranjang`
   ADD PRIMARY KEY (`id`),
@@ -125483,7 +125848,11 @@ ALTER TABLE `transaksi_keranjang`
   ADD KEY `transaksi_keranjang_keranjang_id_foreign` (`keranjang_id`);
 
 --
+<<<<<<< Updated upstream
 -- Indeks untuk tabel `users`
+=======
+-- Indexes for table `users`
+>>>>>>> Stashed changes
 --
 ALTER TABLE `users`
   ADD PRIMARY KEY (`id`),
@@ -125496,30 +125865,47 @@ ALTER TABLE `users`
   ADD KEY `users_village_id_foreign` (`village_id`);
 
 --
+<<<<<<< Updated upstream
 -- Indeks untuk tabel `villages`
+=======
+-- Indexes for table `villages`
+>>>>>>> Stashed changes
 --
 ALTER TABLE `villages`
   ADD KEY `villages_district_id_foreign` (`district_id`),
   ADD KEY `villages_id_index` (`id`);
 
 --
+<<<<<<< Updated upstream
 -- Indeks untuk tabel `wahana`
+=======
+-- Indexes for table `wahana`
+>>>>>>> Stashed changes
 --
 ALTER TABLE `wahana`
   ADD PRIMARY KEY (`id`),
   ADD KEY `wahana_destinasi_id_foreign` (`destinasi_id`);
 
 --
+<<<<<<< Updated upstream
 -- AUTO_INCREMENT untuk tabel yang dibuang
 --
 
 --
 -- AUTO_INCREMENT untuk tabel `banner`
+=======
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `banner`
+>>>>>>> Stashed changes
 --
 ALTER TABLE `banner`
   MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
+<<<<<<< Updated upstream
 -- AUTO_INCREMENT untuk tabel `destinasi`
 --
 ALTER TABLE `destinasi`
@@ -125527,23 +125913,41 @@ ALTER TABLE `destinasi`
 
 --
 -- AUTO_INCREMENT untuk tabel `failed_jobs`
+=======
+-- AUTO_INCREMENT for table `destinasi`
+--
+ALTER TABLE `destinasi`
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+
+--
+-- AUTO_INCREMENT for table `failed_jobs`
+>>>>>>> Stashed changes
 --
 ALTER TABLE `failed_jobs`
   MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
+<<<<<<< Updated upstream
 -- AUTO_INCREMENT untuk tabel `jenis_aduan`
+=======
+-- AUTO_INCREMENT for table `jenis_aduan`
+>>>>>>> Stashed changes
 --
 ALTER TABLE `jenis_aduan`
   MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
+<<<<<<< Updated upstream
 -- AUTO_INCREMENT untuk tabel `jenis_pembayaran`
+=======
+-- AUTO_INCREMENT for table `jenis_pembayaran`
+>>>>>>> Stashed changes
 --
 ALTER TABLE `jenis_pembayaran`
   MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
 
 --
+<<<<<<< Updated upstream
 -- AUTO_INCREMENT untuk tabel `kategori`
 --
 ALTER TABLE `kategori`
@@ -125551,71 +125955,121 @@ ALTER TABLE `kategori`
 
 --
 -- AUTO_INCREMENT untuk tabel `keranjang`
+=======
+-- AUTO_INCREMENT for table `kategori`
+--
+ALTER TABLE `kategori`
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+
+--
+-- AUTO_INCREMENT for table `keranjang`
+>>>>>>> Stashed changes
 --
 ALTER TABLE `keranjang`
   MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
+<<<<<<< Updated upstream
 -- AUTO_INCREMENT untuk tabel `keranjang_item`
+=======
+-- AUTO_INCREMENT for table `keranjang_item`
+>>>>>>> Stashed changes
 --
 ALTER TABLE `keranjang_item`
   MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
+<<<<<<< Updated upstream
 -- AUTO_INCREMENT untuk tabel `migrations`
+=======
+-- AUTO_INCREMENT for table `migrations`
+>>>>>>> Stashed changes
 --
 ALTER TABLE `migrations`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=47;
 
 --
+<<<<<<< Updated upstream
 -- AUTO_INCREMENT untuk tabel `paket`
+=======
+-- AUTO_INCREMENT for table `paket`
+>>>>>>> Stashed changes
 --
 ALTER TABLE `paket`
   MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
+<<<<<<< Updated upstream
 -- AUTO_INCREMENT untuk tabel `paket_destinasi`
+=======
+-- AUTO_INCREMENT for table `paket_destinasi`
+>>>>>>> Stashed changes
 --
 ALTER TABLE `paket_destinasi`
   MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
+<<<<<<< Updated upstream
 -- AUTO_INCREMENT untuk tabel `paket_wahana`
+=======
+-- AUTO_INCREMENT for table `paket_wahana`
+>>>>>>> Stashed changes
 --
 ALTER TABLE `paket_wahana`
   MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
+<<<<<<< Updated upstream
 -- AUTO_INCREMENT untuk tabel `personal_access_tokens`
+=======
+-- AUTO_INCREMENT for table `personal_access_tokens`
+>>>>>>> Stashed changes
 --
 ALTER TABLE `personal_access_tokens`
   MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
+<<<<<<< Updated upstream
 -- AUTO_INCREMENT untuk tabel `profil_desa`
+=======
+-- AUTO_INCREMENT for table `profil_desa`
+>>>>>>> Stashed changes
 --
 ALTER TABLE `profil_desa`
   MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
+<<<<<<< Updated upstream
 -- AUTO_INCREMENT untuk tabel `profil_kabupaten`
+=======
+-- AUTO_INCREMENT for table `profil_kabupaten`
+>>>>>>> Stashed changes
 --
 ALTER TABLE `profil_kabupaten`
   MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
+<<<<<<< Updated upstream
 -- AUTO_INCREMENT untuk tabel `reply_aduan`
+=======
+-- AUTO_INCREMENT for table `reply_aduan`
+>>>>>>> Stashed changes
 --
 ALTER TABLE `reply_aduan`
   MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
+<<<<<<< Updated upstream
 -- AUTO_INCREMENT untuk tabel `reschedule`
+=======
+-- AUTO_INCREMENT for table `reschedule`
+>>>>>>> Stashed changes
 --
 ALTER TABLE `reschedule`
   MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
+<<<<<<< Updated upstream
 -- AUTO_INCREMENT untuk tabel `review`
 --
 ALTER TABLE `review`
@@ -125623,53 +126077,91 @@ ALTER TABLE `review`
 
 --
 -- AUTO_INCREMENT untuk tabel `riwayat_edit`
+=======
+-- AUTO_INCREMENT for table `review`
+--
+ALTER TABLE `review`
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT for table `riwayat_edit`
+>>>>>>> Stashed changes
 --
 ALTER TABLE `riwayat_edit`
   MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
+<<<<<<< Updated upstream
 -- AUTO_INCREMENT untuk tabel `role`
+=======
+-- AUTO_INCREMENT for table `role`
+>>>>>>> Stashed changes
 --
 ALTER TABLE `role`
   MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
+<<<<<<< Updated upstream
 -- AUTO_INCREMENT untuk tabel `social_accounts`
+=======
+-- AUTO_INCREMENT for table `social_accounts`
+>>>>>>> Stashed changes
 --
 ALTER TABLE `social_accounts`
   MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
+<<<<<<< Updated upstream
 -- AUTO_INCREMENT untuk tabel `status_keranjang`
+=======
+-- AUTO_INCREMENT for table `status_keranjang`
+>>>>>>> Stashed changes
 --
 ALTER TABLE `status_keranjang`
   MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
+<<<<<<< Updated upstream
 -- AUTO_INCREMENT untuk tabel `status_tiket`
+=======
+-- AUTO_INCREMENT for table `status_tiket`
+>>>>>>> Stashed changes
 --
 ALTER TABLE `status_tiket`
   MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
+<<<<<<< Updated upstream
 -- AUTO_INCREMENT untuk tabel `tikets`
+=======
+-- AUTO_INCREMENT for table `tikets`
+>>>>>>> Stashed changes
 --
 ALTER TABLE `tikets`
   MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
+<<<<<<< Updated upstream
 -- AUTO_INCREMENT untuk tabel `transaksi`
+=======
+-- AUTO_INCREMENT for table `transaksi`
+>>>>>>> Stashed changes
 --
 ALTER TABLE `transaksi`
   MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
+<<<<<<< Updated upstream
 -- AUTO_INCREMENT untuk tabel `transaksi_keranjang`
+=======
+-- AUTO_INCREMENT for table `transaksi_keranjang`
+>>>>>>> Stashed changes
 --
 ALTER TABLE `transaksi_keranjang`
   MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
+<<<<<<< Updated upstream
 -- AUTO_INCREMENT untuk tabel `users`
 --
 ALTER TABLE `users`
@@ -125677,16 +126169,33 @@ ALTER TABLE `users`
 
 --
 -- AUTO_INCREMENT untuk tabel `wahana`
+=======
+-- AUTO_INCREMENT for table `users`
+--
+ALTER TABLE `users`
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
+
+--
+-- AUTO_INCREMENT for table `wahana`
+>>>>>>> Stashed changes
 --
 ALTER TABLE `wahana`
   MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
+<<<<<<< Updated upstream
 -- Ketidakleluasaan untuk tabel pelimpahan (Dumped Tables)
 --
 
 --
 -- Ketidakleluasaan untuk tabel `destinasi`
+=======
+-- Constraints for dumped tables
+--
+
+--
+-- Constraints for table `destinasi`
+>>>>>>> Stashed changes
 --
 ALTER TABLE `destinasi`
   ADD CONSTRAINT `destinasi_district_id_foreign` FOREIGN KEY (`district_id`) REFERENCES `districts` (`id`) ON UPDATE CASCADE,
@@ -125696,26 +126205,42 @@ ALTER TABLE `destinasi`
   ADD CONSTRAINT `destinasi_village_id_foreign` FOREIGN KEY (`village_id`) REFERENCES `villages` (`id`) ON UPDATE CASCADE;
 
 --
+<<<<<<< Updated upstream
 -- Ketidakleluasaan untuk tabel `districts`
+=======
+-- Constraints for table `districts`
+>>>>>>> Stashed changes
 --
 ALTER TABLE `districts`
   ADD CONSTRAINT `districts_regency_id_foreign` FOREIGN KEY (`regency_id`) REFERENCES `regencies` (`id`) ON UPDATE CASCADE;
 
 --
+<<<<<<< Updated upstream
 -- Ketidakleluasaan untuk tabel `jenis_pembayaran`
+=======
+-- Constraints for table `jenis_pembayaran`
+>>>>>>> Stashed changes
 --
 ALTER TABLE `jenis_pembayaran`
   ADD CONSTRAINT `jenis_pembayaran_id_parent_jenis_pembayaran_foreign` FOREIGN KEY (`id_parent_jenis_pembayaran`) REFERENCES `jenis_pembayaran` (`id`) ON UPDATE CASCADE;
 
 --
+<<<<<<< Updated upstream
 -- Ketidakleluasaan untuk tabel `keranjang`
+=======
+-- Constraints for table `keranjang`
+>>>>>>> Stashed changes
 --
 ALTER TABLE `keranjang`
   ADD CONSTRAINT `keranjang_status_id_foreign` FOREIGN KEY (`status_id`) REFERENCES `status_keranjang` (`id`) ON UPDATE CASCADE,
   ADD CONSTRAINT `keranjang_user_id_foreign` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON UPDATE CASCADE;
 
 --
+<<<<<<< Updated upstream
 -- Ketidakleluasaan untuk tabel `keranjang_item`
+=======
+-- Constraints for table `keranjang_item`
+>>>>>>> Stashed changes
 --
 ALTER TABLE `keranjang_item`
   ADD CONSTRAINT `keranjang_item_destinasi_id_foreign` FOREIGN KEY (`destinasi_id`) REFERENCES `destinasi` (`id`) ON UPDATE CASCADE,
@@ -125725,27 +126250,43 @@ ALTER TABLE `keranjang_item`
   ADD CONSTRAINT `keranjang_item_tikets_id_foreign` FOREIGN KEY (`tikets_id`) REFERENCES `tikets` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 --
+<<<<<<< Updated upstream
 -- Ketidakleluasaan untuk tabel `paket`
+=======
+-- Constraints for table `paket`
+>>>>>>> Stashed changes
 --
 ALTER TABLE `paket`
   ADD CONSTRAINT `paket_destinasi_id_foreign` FOREIGN KEY (`destinasi_id`) REFERENCES `destinasi` (`id`) ON UPDATE CASCADE;
 
 --
+<<<<<<< Updated upstream
 -- Ketidakleluasaan untuk tabel `paket_destinasi`
+=======
+-- Constraints for table `paket_destinasi`
+>>>>>>> Stashed changes
 --
 ALTER TABLE `paket_destinasi`
   ADD CONSTRAINT `paket_destinasi_destinasi_id_foreign` FOREIGN KEY (`destinasi_id`) REFERENCES `destinasi` (`id`) ON UPDATE CASCADE,
   ADD CONSTRAINT `paket_destinasi_paket_id_foreign` FOREIGN KEY (`paket_id`) REFERENCES `paket` (`id`) ON UPDATE CASCADE;
 
 --
+<<<<<<< Updated upstream
 -- Ketidakleluasaan untuk tabel `paket_wahana`
+=======
+-- Constraints for table `paket_wahana`
+>>>>>>> Stashed changes
 --
 ALTER TABLE `paket_wahana`
   ADD CONSTRAINT `paket_wahana_paket_id_foreign` FOREIGN KEY (`paket_id`) REFERENCES `paket` (`id`) ON UPDATE CASCADE,
   ADD CONSTRAINT `paket_wahana_wahana_id_foreign` FOREIGN KEY (`wahana_id`) REFERENCES `wahana` (`id`) ON UPDATE CASCADE;
 
 --
+<<<<<<< Updated upstream
 -- Ketidakleluasaan untuk tabel `profil_desa`
+=======
+-- Constraints for table `profil_desa`
+>>>>>>> Stashed changes
 --
 ALTER TABLE `profil_desa`
   ADD CONSTRAINT `profil_desa_district_id_foreign` FOREIGN KEY (`district_id`) REFERENCES `districts` (`id`) ON UPDATE CASCADE,
@@ -125754,27 +126295,43 @@ ALTER TABLE `profil_desa`
   ADD CONSTRAINT `profil_desa_village_id_foreign` FOREIGN KEY (`village_id`) REFERENCES `villages` (`id`) ON UPDATE CASCADE;
 
 --
+<<<<<<< Updated upstream
 -- Ketidakleluasaan untuk tabel `profil_kabupaten`
+=======
+-- Constraints for table `profil_kabupaten`
+>>>>>>> Stashed changes
 --
 ALTER TABLE `profil_kabupaten`
   ADD CONSTRAINT `profil_kabupaten_province_id_foreign` FOREIGN KEY (`province_id`) REFERENCES `provinces` (`id`) ON UPDATE CASCADE,
   ADD CONSTRAINT `profil_kabupaten_regency_id_foreign` FOREIGN KEY (`regency_id`) REFERENCES `regencies` (`id`) ON UPDATE CASCADE;
 
 --
+<<<<<<< Updated upstream
 -- Ketidakleluasaan untuk tabel `regencies`
+=======
+-- Constraints for table `regencies`
+>>>>>>> Stashed changes
 --
 ALTER TABLE `regencies`
   ADD CONSTRAINT `regencies_province_id_foreign` FOREIGN KEY (`province_id`) REFERENCES `provinces` (`id`) ON UPDATE CASCADE;
 
 --
+<<<<<<< Updated upstream
 -- Ketidakleluasaan untuk tabel `reply_aduan`
+=======
+-- Constraints for table `reply_aduan`
+>>>>>>> Stashed changes
 --
 ALTER TABLE `reply_aduan`
   ADD CONSTRAINT `reply_aduan_admin_id_foreign` FOREIGN KEY (`admin_id`) REFERENCES `users` (`id`) ON UPDATE CASCADE,
   ADD CONSTRAINT `reply_aduan_reschedule_id_foreign` FOREIGN KEY (`reschedule_id`) REFERENCES `reschedule` (`id`) ON UPDATE CASCADE;
 
 --
+<<<<<<< Updated upstream
 -- Ketidakleluasaan untuk tabel `reschedule`
+=======
+-- Constraints for table `reschedule`
+>>>>>>> Stashed changes
 --
 ALTER TABLE `reschedule`
   ADD CONSTRAINT `reschedule_jenis_aduan_id_foreign` FOREIGN KEY (`jenis_aduan_id`) REFERENCES `jenis_aduan` (`id`) ON UPDATE CASCADE,
@@ -125783,47 +126340,75 @@ ALTER TABLE `reschedule`
   ADD CONSTRAINT `reschedule_user_id_foreign` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON UPDATE CASCADE;
 
 --
+<<<<<<< Updated upstream
 -- Ketidakleluasaan untuk tabel `review`
+=======
+-- Constraints for table `review`
+>>>>>>> Stashed changes
 --
 ALTER TABLE `review`
   ADD CONSTRAINT `review_ibfk_1` FOREIGN KEY (`destinasi_id`) REFERENCES `destinasi` (`id`) ON DELETE CASCADE,
   ADD CONSTRAINT `review_ibfk_2` FOREIGN KEY (`reviewer_id`) REFERENCES `users` (`id`) ON DELETE CASCADE;
 
 --
+<<<<<<< Updated upstream
 -- Ketidakleluasaan untuk tabel `riwayat_edit`
+=======
+-- Constraints for table `riwayat_edit`
+>>>>>>> Stashed changes
 --
 ALTER TABLE `riwayat_edit`
   ADD CONSTRAINT `riwayat_edit_admin_id_foreign` FOREIGN KEY (`admin_id`) REFERENCES `users` (`id`) ON UPDATE CASCADE;
 
 --
+<<<<<<< Updated upstream
 -- Ketidakleluasaan untuk tabel `social_accounts`
+=======
+-- Constraints for table `social_accounts`
+>>>>>>> Stashed changes
 --
 ALTER TABLE `social_accounts`
   ADD CONSTRAINT `social_accounts_user_id_foreign` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON UPDATE CASCADE;
 
 --
+<<<<<<< Updated upstream
 -- Ketidakleluasaan untuk tabel `status_tiket`
+=======
+-- Constraints for table `status_tiket`
+>>>>>>> Stashed changes
 --
 ALTER TABLE `status_tiket`
   ADD CONSTRAINT `status_tiket_tikets_id_foreign` FOREIGN KEY (`tikets_id`) REFERENCES `tikets` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
   ADD CONSTRAINT `status_tiket_wahana_id_foreign` FOREIGN KEY (`wahana_id`) REFERENCES `wahana` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 --
+<<<<<<< Updated upstream
 -- Ketidakleluasaan untuk tabel `transaksi`
+=======
+-- Constraints for table `transaksi`
+>>>>>>> Stashed changes
 --
 ALTER TABLE `transaksi`
   ADD CONSTRAINT `transaksi_jenis_pembayaran_id_foreign` FOREIGN KEY (`jenis_pembayaran_id`) REFERENCES `jenis_pembayaran` (`id`) ON UPDATE CASCADE,
   ADD CONSTRAINT `transaksi_user_id_foreign` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON UPDATE CASCADE;
 
 --
+<<<<<<< Updated upstream
 -- Ketidakleluasaan untuk tabel `transaksi_keranjang`
+=======
+-- Constraints for table `transaksi_keranjang`
+>>>>>>> Stashed changes
 --
 ALTER TABLE `transaksi_keranjang`
   ADD CONSTRAINT `transaksi_keranjang_keranjang_id_foreign` FOREIGN KEY (`keranjang_id`) REFERENCES `keranjang` (`id`) ON UPDATE CASCADE,
   ADD CONSTRAINT `transaksi_keranjang_transaksi_id_foreign` FOREIGN KEY (`transaksi_id`) REFERENCES `transaksi` (`id`) ON UPDATE CASCADE;
 
 --
+<<<<<<< Updated upstream
 -- Ketidakleluasaan untuk tabel `users`
+=======
+-- Constraints for table `users`
+>>>>>>> Stashed changes
 --
 ALTER TABLE `users`
   ADD CONSTRAINT `users_destinasi_id_foreign` FOREIGN KEY (`destinasi_id`) REFERENCES `destinasi` (`id`) ON UPDATE CASCADE,
@@ -125834,13 +126419,21 @@ ALTER TABLE `users`
   ADD CONSTRAINT `users_village_id_foreign` FOREIGN KEY (`village_id`) REFERENCES `villages` (`id`) ON UPDATE CASCADE;
 
 --
+<<<<<<< Updated upstream
 -- Ketidakleluasaan untuk tabel `villages`
+=======
+-- Constraints for table `villages`
+>>>>>>> Stashed changes
 --
 ALTER TABLE `villages`
   ADD CONSTRAINT `villages_district_id_foreign` FOREIGN KEY (`district_id`) REFERENCES `districts` (`id`) ON UPDATE CASCADE;
 
 --
+<<<<<<< Updated upstream
 -- Ketidakleluasaan untuk tabel `wahana`
+=======
+-- Constraints for table `wahana`
+>>>>>>> Stashed changes
 --
 ALTER TABLE `wahana`
   ADD CONSTRAINT `wahana_destinasi_id_foreign` FOREIGN KEY (`destinasi_id`) REFERENCES `destinasi` (`id`) ON UPDATE CASCADE;

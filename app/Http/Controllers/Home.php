@@ -48,6 +48,9 @@ class Home extends Controller
         ];
 
         $pernahReview = false;
+        if (!auth()->check()) {
+            $pernahReview = true;
+        }
         if (auth()->check()) {
             $pernahReview = Review::where('reviewer_id', auth()->id())->exists();
         }
@@ -59,6 +62,8 @@ class Home extends Controller
             $response = Http::get('https://produk.gigaboot.id/repopython/rekomendasi', [
                 'user' => $username
             ]);
+
+            // dd($response->json());
 
             if ($response->successful() && $response->json()['status'] === 'success') {
                 // Ambil data dari API dan urutkan berdasarkan Weighted_Average tertinggi
@@ -104,9 +109,11 @@ class Home extends Controller
         // Data regency
         $regency = Regency::destinasiAktif()
             ->with('profilKabupaten')
-            ->withCount(['profildesa' => function ($query) {
-                $query->destinasiAktif();
-            }])
+            ->withCount([
+                'profildesa' => function ($query) {
+                    $query->destinasiAktif();
+                }
+            ])
             ->get();
 
         // Data desa
@@ -132,9 +139,11 @@ class Home extends Controller
 
     public function kabupaten()
     {
-        $kabupaten = Regency::destinasiAktif()->with('profilKabupaten')->withCount(['profildesa' => function ($query) {
-            $query->destinasiAktif();
-        }])->paginate(9);
+        $kabupaten = Regency::destinasiAktif()->with('profilKabupaten')->withCount([
+            'profildesa' => function ($query) {
+                $query->destinasiAktif();
+            }
+        ])->paginate(9);
 
         return view('home.kabupaten', [
             'kabupaten' => $kabupaten
@@ -164,7 +173,7 @@ class Home extends Controller
 
     public function detailDesa($id)
     {
-        $desa   = Village::id($id)->first();
+        $desa = Village::id($id)->first();
         $detail = optional($desa->profilDesa())->first();
 
         $dataGambar = $detail->foto_desa ?? 'kabupaten_default.jpg';
@@ -329,12 +338,12 @@ class Home extends Controller
 
             //tambah destinasi ke item details
             $midtrans_items[] = [
-                'id'        => $destinasi->id,
-                'price'     => $destinasi->htm_destinasi,
-                'quantity'  => $request->jumlah,
-                'name'      => $destinasi->nama_destinasi,
-                'brand'     => 'destinasi',
-                'category'  => '-'
+                'id' => $destinasi->id,
+                'price' => $destinasi->htm_destinasi,
+                'quantity' => $request->jumlah,
+                'name' => $destinasi->nama_destinasi,
+                'brand' => 'destinasi',
+                'category' => '-'
             ];
 
             foreach ($request->wahana as $wahana) {
@@ -352,12 +361,12 @@ class Home extends Controller
 
                     //tambah wahana ke item details
                     $midtrans_items[] = [
-                        'id'        => $paket->id,
-                        'price'     => $paket->harga_paket,
-                        'quantity'  => $request->jumlah,
-                        'name'      => $paket->nama_paket,
-                        'brand'     => 'wahana',
-                        'category'  => $destinasi->id,
+                        'id' => $paket->id,
+                        'price' => $paket->harga_paket,
+                        'quantity' => $request->jumlah,
+                        'name' => $paket->nama_paket,
+                        'brand' => 'wahana',
+                        'category' => $destinasi->id,
                     ];
 
                     //tambah wahana ke metadata transaksi
@@ -482,28 +491,28 @@ class Home extends Controller
             $tipe_pembayaran = JenisPembayaran::enabledPayment()->aktif()->pluck('kode')->toArray();
 
             $response = Midtrans::http([
-                'transaction_details'   => [
-                    'order_id'      => $order_id,
-                    'gross_amount'  => $total //total harga ( jumlah x harga keranjang = jumlah x (harga destinasi + (harga paket + harga paket + ...))  )
+                'transaction_details' => [
+                    'order_id' => $order_id,
+                    'gross_amount' => $total //total harga ( jumlah x harga keranjang = jumlah x (harga destinasi + (harga paket + harga paket + ...))  )
                 ],
-                'customer_details'      => [
-                    'first_name'    => $request->nama_pemesan,
-                    'email'         => $request->email_pemesan,
-                    'phone'         => $request->no_telp_pemesan
+                'customer_details' => [
+                    'first_name' => $request->nama_pemesan,
+                    'email' => $request->email_pemesan,
+                    'phone' => $request->no_telp_pemesan
                 ],
-                'item_details'          => $midtrans_items,
-                'enabled_payments'      => $tipe_pembayaran,
-                'metadata'              => [
-                    'transaksi'     => $transaksi
+                'item_details' => $midtrans_items,
+                'enabled_payments' => $tipe_pembayaran,
+                'metadata' => [
+                    'transaksi' => $transaksi
                 ]
             ]);
 
             $statusCode = $response->getStatusCode();
 
             if ($statusCode == 201) {
-                $body       = $response->getBody();
-                $data       = json_decode($body, true);
-                $snapToken  = $data['token'];
+                $body = $response->getBody();
+                $data = json_decode($body, true);
+                $snapToken = $data['token'];
             } else {
                 throw new \Exception('gagal meraih server');
             }
@@ -512,7 +521,7 @@ class Home extends Controller
 
             return view('home.checkout', [
                 'snapToken' => $snapToken,
-                'tipe'      => $tipe,
+                'tipe' => $tipe,
                 'transaksi' => $transaksi
             ]);
         } catch (\Illuminate\Validation\ValidationException $e) {
@@ -573,12 +582,12 @@ class Home extends Controller
 
             //tambah paket ke item details
             $midtrans_items[] = [
-                'id'        => $paket->id,
-                'price'     => $paket->harga_paket,
-                'quantity'  => $request->jumlah,
-                'name'      => $paket->nama_paket,
-                'brand'     => 'paket',
-                'category'  => '-'
+                'id' => $paket->id,
+                'price' => $paket->harga_paket,
+                'quantity' => $request->jumlah,
+                'name' => $paket->nama_paket,
+                'brand' => 'paket',
+                'category' => '-'
             ];
 
             //untuk metadata transaksi
@@ -611,12 +620,12 @@ class Home extends Controller
 
                         //tambah wahana ke item details
                         $midtrans_items[] = [
-                            'id'        => $paket_wahana->id,
-                            'price'     => $paket_wahana->harga_paket,
-                            'quantity'  => $request->jumlah,
-                            'name'      => $paket_wahana->nama_paket,
-                            'brand'     => 'wahana',
-                            'category'  => $destinasi->id,
+                            'id' => $paket_wahana->id,
+                            'price' => $paket_wahana->harga_paket,
+                            'quantity' => $request->jumlah,
+                            'name' => $paket_wahana->nama_paket,
+                            'brand' => 'wahana',
+                            'category' => $destinasi->id,
                         ];
 
                         //tambah paket wahana ke metadata transaksi
@@ -624,7 +633,7 @@ class Home extends Controller
                     }
                 }
 
-                $arr_paket_wahana_id =  ($arr_paket_wahana_id == null) ? 0 : $arr_paket_wahana_id;
+                $arr_paket_wahana_id = ($arr_paket_wahana_id == null) ? 0 : $arr_paket_wahana_id;
 
                 //tambah destinasi ke metadata transaksi beserta paket wahana yang ada didalamnya
                 $array_items[] = [
@@ -864,12 +873,12 @@ class Home extends Controller
 
                     //menambahkan paket ke item details
                     $midtrans_items[] = [
-                        'id'        => $paket->id,
-                        'price'     => $paket->harga_paket,
-                        'quantity'  => $ker->jumlah,
-                        'name'      => $paket->nama_paket,
-                        'brand'     => 'paket',
-                        'category'  => '-'
+                        'id' => $paket->id,
+                        'price' => $paket->harga_paket,
+                        'quantity' => $ker->jumlah,
+                        'name' => $paket->nama_paket,
+                        'brand' => 'paket',
+                        'category' => '-'
                     ];
 
                     //setiap destinasi didalam paket
@@ -883,12 +892,12 @@ class Home extends Controller
                             if ($paket_wahana->pivot->destinasi_id == $destinasi->id) {
                                 //menambahkan paket wahana ke item details
                                 $midtrans_items[] = [
-                                    'id'        => $paket_wahana->id,
-                                    'price'     => $paket_wahana->harga_paket,
-                                    'quantity'  => $ker->jumlah,
-                                    'name'      => $paket_wahana->nama_paket,
-                                    'brand'     => 'wahana',
-                                    'category'  => '-'
+                                    'id' => $paket_wahana->id,
+                                    'price' => $paket_wahana->harga_paket,
+                                    'quantity' => $ker->jumlah,
+                                    'name' => $paket_wahana->nama_paket,
+                                    'brand' => 'wahana',
+                                    'category' => '-'
                                 ];
 
                                 //menambahkan id paket wahana ke array
@@ -896,7 +905,7 @@ class Home extends Controller
                             }
                         }
 
-                        $arr_paket_wahana_id =  ($arr_paket_wahana_id == null) ? 0 : $arr_paket_wahana_id;
+                        $arr_paket_wahana_id = ($arr_paket_wahana_id == null) ? 0 : $arr_paket_wahana_id;
 
                         //menambahkan destinasi ke item details
                         $item[] = [
@@ -914,23 +923,23 @@ class Home extends Controller
 
                     //menambahkan destinasi ke item details
                     $midtrans_items[] = [
-                        'id'        => $destinasi->id,
-                        'price'     => $destinasi->htm_destinasi,
-                        'quantity'  => $ker->jumlah,
-                        'name'      => $destinasi->nama_destinasi,
-                        'brand'     => 'destinasi',
-                        'category'  => '-'
+                        'id' => $destinasi->id,
+                        'price' => $destinasi->htm_destinasi,
+                        'quantity' => $ker->jumlah,
+                        'name' => $destinasi->nama_destinasi,
+                        'brand' => 'destinasi',
+                        'category' => '-'
                     ];
 
                     //menambahkan paket wahana ke item details
                     foreach ($ker->paketWahana()->where('index', 1)->get() as $paket_wahana) {
                         $midtrans_items[] = [
-                            'id'        => $paket_wahana->id,
-                            'price'     => $paket_wahana->harga_paket,
-                            'quantity'  => $ker->jumlah,
-                            'name'      => $paket_wahana->nama_paket,
-                            'brand'     => 'wahana',
-                            'category'  => '-'
+                            'id' => $paket_wahana->id,
+                            'price' => $paket_wahana->harga_paket,
+                            'quantity' => $ker->jumlah,
+                            'name' => $paket_wahana->nama_paket,
+                            'brand' => 'wahana',
+                            'category' => '-'
                         ];
                     }
 

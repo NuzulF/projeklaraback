@@ -445,7 +445,7 @@
     </section>
     <!--::Kategori End::-->
 
-    <section class="client_review section_padding">
+    <section class="client_review section_padding" style="display: none;">
         <div class="container">
             <div class="row">
                 <div class="col-xl-6">

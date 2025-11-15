@@ -35,7 +35,7 @@ class Home extends Controller
     public function index()
     {
         // Ambil username pengguna yang sedang login
-        $username = auth()->check() ? auth()->user()->username : 'guest';
+        $username = auth()->check() ? auth()->user()->reviewer_id : 'guest';
 
         $kategoriList = [
             'Pantai',
@@ -59,8 +59,9 @@ class Home extends Controller
         $rekomendasi = [];
         $destinasi = [];
         try {
-            $response = Http::get('https://produk.gigaboot.id/repopython/rekomendasi', [
-                'user' => $username
+            $response = Http::post('https://produk.gigaboot.id/repopythonv2/inference', [
+                'user_id' => 'r'.$username,
+                'top_n' => 5
             ]);
 
             // dd($response->json());

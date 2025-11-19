@@ -288,7 +288,7 @@
         <div class="carousel-inner">
             @foreach ($banner as $key => $image)
                 <div class="carousel-item @if ($key == 0) active @endif">
-                    <img src="{{ asset('images/' . $image) }}" class="d-block w-100" style="max-height: 500px;"
+                    <img src="{{ asset('img/' . $image) }}" class="d-block w-100" style="max-height: 500px;"
                         alt="Image {{ $key }}">
                 </div>
             @endforeach

@@ -80,7 +80,7 @@
                                         <a class="nav-link is-active" href="{{ url('/') }}">Home</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="{{ url('kabupaten') }}">Kabupaten</a>
+                                        <a class="nav-link" href="{{ url('kabupaten') }}">Wilayah</a>
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link" href="{{ url('destinasi') }}">Destinasi</a>
@@ -278,7 +278,7 @@
     @endif
 
     <div id="carouselExampleIndicators" class="banner_part carousel slide" data-ride="carousel"
-        style="max-height: 350px;height:auto;">
+        style="max-height: 500px;height:auto;">
         <ol class="carousel-indicators">
             @foreach ($banner as $key => $image)
                 <li data-target="#carouselExampleIndicators" data-slide-to="{{ $key }}"
@@ -288,7 +288,7 @@
         <div class="carousel-inner">
             @foreach ($banner as $key => $image)
                 <div class="carousel-item @if ($key == 0) active @endif">
-                    <img src="{{ asset('images/' . $image) }}" class="d-block w-100" style="max-height: 350px;"
+                    <img src="{{ asset('images/' . $image) }}" class="d-block w-100" style="max-height: 500px;"
                         alt="Image {{ $key }}">
                 </div>
             @endforeach
@@ -304,7 +304,7 @@
     </div>
 
     <!--::Search Bar Start::-->
-    <section class="booking_part" style="margin-top: -20px;">
+    <section class="booking_part" style="margin-top: -100px;">
         <div class="container">
             <div class="col-lg-12">
                 <div class="booking_menu">
@@ -548,7 +548,7 @@
                 </div>
                 <div class="col-sm-6 col-md-4">
                     <div class="single-footer-widget footer_icon">
-                        <h4>Contact Us</h4>
+                        <!-- <h4>Contact Us</h4>
                         <p>
                             Kampus Mesen UNS, Jl. Jend. Urip Sumoharjo No.116,
                             Purwodiningratan, Kec. Jebres, Kota Surakarta, Jawa Tengah 57129
@@ -563,7 +563,7 @@
                                     class="ti-youtube"></i></a>
                             <a href="https://www.instagram.com/d3tiuns/?igshid=MzRlODBiNWFlZA%3D%3D"
                                 target="_blank"><i class="ti-instagram"></i></a>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>

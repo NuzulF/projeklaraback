@@ -6,38 +6,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GoTripJava</title>
-    <link href="{{ url('assets/img/Logo.png') }}" rel="icon">
+    <link href="{{ secure_url('assets/img/Logo.png') }}" rel="icon">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="{{ url('assets/css/bootstrap.min.css') }}" />
+    <link rel="stylesheet" href="{{ secure_url('assets/css/bootstrap.min.css') }}" />
 
     <!-- animate CSS -->
-    <link rel="stylesheet" href="{{ url('assets/css/animate.css') }}" />
+    <link rel="stylesheet" href="{{ secure_url('assets/css/animate.css') }}" />
 
     <!-- owl carousel CSS -->
-    <link rel="stylesheet" href="{{ url('assets/css/owl.carousel.min.css') }}" />
+    <link rel="stylesheet" href="{{ secure_url('assets/css/owl.carousel.min.css') }}" />
 
     <!-- themify CSS -->
-    <link rel="stylesheet" href="{{ url('assets/css/themify-icons.css') }}" />
+    <link rel="stylesheet" href="{{ secure_url('assets/css/themify-icons.css') }}" />
 
     <!-- flaticon CSS -->
-    <link rel="stylesheet" href="{{ url('assets/css/flaticon.css') }}" />
+    <link rel="stylesheet" href="{{ secure_url('assets/css/flaticon.css') }}" />
 
     <!-- font awesome CSS -->
-    <link rel="stylesheet" href="{{ url('assets/fontawesome/css/all.min.css') }}" />
+    <link rel="stylesheet" href="{{ secure_url('assets/fontawesome/css/all.min.css') }}" />
 
     <!-- magnific CSS -->
-    <link rel="stylesheet" href="{{ url('assets/css/magnific-popup.css') }}" />
-    <link rel="stylesheet" href="{{ url('assets/css/gijgo.min.css') }}" />
+    <link rel="stylesheet" href="{{ secure_url('assets/css/magnific-popup.css') }}" />
+    <link rel="stylesheet" href="{{ secure_url('assets/css/gijgo.min.css') }}" />
 
     <!-- nice select CSS -->
-    <link rel="stylesheet" href="{{ url('assets/css/nice-select.css') }}" />
+    <link rel="stylesheet" href="{{ secure_url('assets/css/nice-select.css') }}" />
 
     <!-- slick CSS -->
-    <link rel="stylesheet" href="{{ url('assets/css/slick.css') }}" />
+    <link rel="stylesheet" href="{{ secure_url('assets/css/slick.css') }}" />
 
     <!-- style CSS -->
-    <link rel="stylesheet" href="{{ url('assets/css/login.css') }}" />
+    <link rel="stylesheet" href="{{ secure_url('assets/css/login.css') }}" />
     <link rel="stylesheet" href="https://cdnjs.cloudfare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     @include('components.css-pop-up')
 </head>
@@ -45,28 +45,28 @@
 <body>
     <div class="wrapper">
         <div class="back">
-            <a href="{{ url('/') }}"><button class="btn_back"><i class="fas fa-home"></i> Home</button></a>
+            <a href="{{ secure_url('/') }}"><button class="btn_back"><i class="fas fa-home"></i> Home</button></a>
         </div>
         <h2>Login ke <br>Pesona Desa</h2>
-        <form id="login" action="{{ url('proses-login') }}" method="POST">
+        <form id="login" action="{{ secure_url('proses-login') }}" method="POST">
             @csrf
             <input class="input" type="email" placeholder="Email" id="email" name="email" value="{{ old('email') }}" required>
             <input class="input" type="password" placeholder="Password" id="password" name="password">
             <div class="recover">
-                <a href="{{ url('forgot-password') }}">Lupa Password?</a>
+                <a href="{{ secure_url('forgot-password') }}">Lupa Password?</a>
             </div>
             <button type="submit" id="buttonLogin">Log In</button>
         </form>
         <p><b>ATAU</b></p>
-        <form action="{{ url('auth/google') }}">
+        <form action="{{ secure_url('auth/google') }}">
             @csrf
-            <button id="buttonGoogle"><img src="{{ url('assets/img/icongg.png') }}" alt="text">
+            <button id="buttonGoogle"><img src="{{ secure_url('assets/img/icongg.png') }}" alt="text">
                 <span>Sign In with Google</span>
             </button>
         </form>
         <div class="member">
             <br>
-            Belum menjadi member? <a href="{{ url('register') }}">Register disini</a>
+            Belum menjadi member? <a href="{{ secure_url('register') }}">Register disini</a>
         </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>

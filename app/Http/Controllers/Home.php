@@ -60,7 +60,7 @@ class Home extends Controller
         $destinasi = [];
         try {
             $response = Http::post('https://produk.gigaboot.id/repopythonv2/inference', [
-                'user_id' => 'r'.$username,
+                'user_id' => 'r13',
                 'top_n' => 5
             ]);
 
@@ -98,7 +98,7 @@ class Home extends Controller
         }
 
         // Data banner
-        $banner = Banner::first()->gambar ?? "Banner1.png|Banner2.png|Banner3.png";
+        $banner = Banner::first()->gambar ?? "Bannera.png|Bannerb.png|Bannerc.png";
         $banner = explode("|", $banner);
 
         // Data kategori

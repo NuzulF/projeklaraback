@@ -9,26 +9,26 @@
     <link href="{{ url('assets/img/Logo.png') }}" rel="icon" />
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="{{ url('assets/css/bootstrap.min.css') }}" />
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
 
     <!-- animate CSS -->
-    <link rel="stylesheet" href="{{ url('assets/css/animate.css') }}" />
+    <link rel="stylesheet" href="assets/css/animate.css" />
 
     <!-- owl carousel CSS -->
-    <link rel="stylesheet" href="{{ url('assets/css/owl.carousel.min.css') }}" />
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css" />
 
     <!-- themify CSS -->
-    <link rel="stylesheet" href="{{ url('assets/css/themify-icons.css') }}" />
+    <link rel="stylesheet" href="assets/css/themify-icons.css" />
 
     <!-- flaticon CSS -->
-    <link rel="stylesheet" href="{{ url('assets/css/flaticon.css') }}" />
+    <link rel="stylesheet" href="assets/css/flaticon.css" />
 
     <!-- font awesome CSS -->
-    <link rel="stylesheet" href="{{ url('assets/fontawesome/css/all.min.css') }}" />
+    <link rel="stylesheet" href="assets/fontawesome/css/all.min.css" />
 
     <!-- magnific CSS -->
-    <link rel="stylesheet" href="{{ url('assets/css/magnific-popup.css') }}" />
-    <link rel="stylesheet" href="{{ url('assets/css/gijgo.min.css') }}" />
+    <link rel="stylesheet" href="assets/css/magnific-popup.css" />
+    <link rel="stylesheet" href="assets/css/gijgo.min.css" />
 
     <!-- nice select CSS -->
     <link rel="stylesheet" href="{{ url('assets/css/nice-select.css') }}" />
@@ -65,7 +65,7 @@
                                         <a class="nav-link" href="{{ url('/') }}">Home</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="{{ url('kabupaten') }}">Kabupaten</a>
+                                        <a class="nav-link" href="{{ url('kabupaten') }}">Wilayah</a>
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link" href="{{ url('destinasi') }}">Destinasi</a>
@@ -273,11 +273,9 @@
                     <div class="single-footer-widget footer_icon">
                         <h4>Contact Us</h4>
                         <p>
-                            Kampus Mesen UNS, Jl. Jend. Urip Sumoharjo No.116,
-                            Purwodiningratan, Kec. Jebres, Kota Surakarta, Jawa Tengah 57129
-                            <br />(0271) 663450
+                            DSI Pascasaraja UNDIP &
+			    Universitas Sebelas Maret
                         </p>
-                        <span>kontak@d3ti.vokasi.uns.ac.id</span>
                         <div class="social-icons">
                             <a href="https://web.facebook.com/d3tiuns" target="_blank"><i
                                     class="ti-facebook"></i></a>

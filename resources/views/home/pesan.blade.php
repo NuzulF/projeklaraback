@@ -339,11 +339,10 @@
                     <div class="single-footer-widget footer_icon">
                         <h4>Contact Us</h4>
                         <p>
-                            Kampus Mesen UNS, Jl. Jend. Urip Sumoharjo No.116,
-                            Purwodiningratan, Kec. Jebres, Kota Surakarta, Jawa Tengah 57129
-                            <br />(0271) 663450
+                            DSI Pascasaraja UNDIP &
+		            Universitas Sebelas Maret
                         </p>
-                        <span>kontak@d3ti.vokasi.uns.ac.id</span>
+
                         <div class="social-icons">
                             <a href="https://web.facebook.com/d3tiuns" target="_blank"><i
                                     class="ti-facebook"></i></a>

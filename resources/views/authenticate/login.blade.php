@@ -47,7 +47,7 @@
         <div class="back">
             <a href="{{ secure_url('/') }}"><button class="btn_back"><i class="fas fa-home"></i> Home</button></a>
         </div>
-        <h2>Login ke <br>Pesona Desa</h2>
+        <h2>Login ke <br>Go-Tripjava</h2>
         <form id="login" action="{{ secure_url('proses-login') }}" method="POST">
             @csrf
             <input class="input" type="email" placeholder="Email" id="email" name="email" value="{{ old('email') }}" required>

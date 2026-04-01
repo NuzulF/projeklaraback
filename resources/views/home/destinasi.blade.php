@@ -209,7 +209,7 @@
                     <div class="col-xl-12">
                         <div class="section_tittle">
                             <h2>Destinasi Wisata</h2>
-                            <p>Temukan berbagai Destinasi Wisata menarik yang terdapat di berbagai kabupaten.</p>
+                            <p>Temukan berbagai Destinasi Wisata menarik yang terdapat di Jawa Tengah dan DIY.</p>
                         </div>
                     </div>
                 </div>
@@ -271,10 +271,10 @@
                             memesan dan memperoleh informasi yang dibutuhkan dengan cara cepat dan mudah. <br><br>
                             Cari dan pesan tiket wisatamu sekarang hanya di GoTripJava!
                         </p>
-                        <!-- <img src="{{ url('assets/img/logo/Logo UNS (1).png') }}" alt="UNS">
+                        <img src="{{ url('assets/img/logo/Logo UNS (1).png') }}" alt="UNS">
                         <img src="{{ url('assets/img/logo/LogoTypeSV-01.png') }}" alt="SV">
                         <img src="{{ url('assets/img/logo/LOGO PRODI UNS.png') }}" alt="D3TI">
-                        <img src="{{ url('assets/img/logo/OASE Tanpa BG.jpg') }}" alt="OASE"> -->
+                        <!/-- <img src="{{ url('assets/img/logo/OASE Tanpa BG.jpg') }}" alt="OASE"> -->
                     </div>
                 </div>
                 <div class="col-sm-6 col-md-4">

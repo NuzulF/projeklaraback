@@ -47,21 +47,25 @@ class Home extends Controller
             'Belanja'
         ];
 
+	$userId = '0';
+
         $pernahReview = false;
         if (!auth()->check()) {
             $pernahReview = true;
         }
         if (auth()->check()) {
             $pernahReview = Review::where('reviewer_id', auth()->id())->exists();
-        }
-
+        
+	$userId = 'r' . preg_replace('/[^0-9]/', '', auth()->user()->name);
+	//dd($userId);
+	}
         // Ambil daftar rekomendasi dari API
         $rekomendasi = [];
         $destinasi = [];
-        try {
+        if($userId != '0') {
             $response = Http::post('https://produk.gigaboot.id/repopythonv2/inference', [
-                'user_id' => 'r13',
-                'top_n' => 5
+                'user_id' => $userId,
+                'top_n' => 6
             ]);
 
             // dd($response->json());
@@ -69,31 +73,49 @@ class Home extends Controller
             if ($response->successful() && $response->json()['status'] === 'success') {
                 // Ambil data dari API dan urutkan berdasarkan Weighted_Average tertinggi
                 $apiData = collect($response->json()['data'])
-                    ->sortByDesc('Weighted_Average'); // Urutkan dari skor tertinggi
+                    ->sortByDesc('Pred_norm'); // Urutkan dari skor tertinggi
 
                 // Ambil daftar nama DTW
-                $dtwNames = $apiData->pluck('nama DTW')->toArray();
+                $dtwNames = $apiData->pluck('nama_dtw')->toArray();
 
-                // Cari destinasi di database berdasarkan nama DTW
-                $rekomendasi = Destinasi::whereIn('nama_destinasi', $dtwNames)
-                    ->approve()
-                    ->aktif()
-                    ->get()
-                    ->sortBy(function ($item) use ($dtwNames) {
+		//dd($dtwNames);
+	                // Cari destinasi di database berdasarkan nama DTW
+                //$rekomendasi = Destinasi::whereIn('nama_destinasi', $dtwNames)
+                //    ->approve()
+                //    ->aktif()
+                //    ->get()
+                //    ->sortBy(function ($item) use ($dtwNames) {
                         // Urutkan sesuai urutan di API (berdasarkan Weighted_Average)
-                        return array_search($item->nama, $dtwNames);
-                    });
+                 //       return array_search($item->nama, $dtwNames);
+                 //   });
+		// ambil semua destinasi yang relevan
+        	
+		// escape nama destinasi untuk SQL
+        $escaped = array_map(function ($name) {
+            return "'" . addslashes($name) . "'";
+        }, $dtwNames);
 
-                // Ambil 6 destinasi teratas berdasarkan Weighted_Average
+        $orderSql = implode(',', $escaped);
+
+        // ambil destinasi dari database sesuai urutan API
+        $rekomendasi = Destinasi::whereIn('nama_destinasi', $dtwNames)
+            ->approve()
+            ->aktif()
+            ->orderByRaw("FIELD(nama_destinasi, $orderSql)")
+            ->get();
+
+		// Ambil 6 destinasi teratas berdasarkan Weighted_Average
                 $destinasi = $rekomendasi->take(6);
             }
-        } catch (\Exception $e) {
+        } // catch (\Exception $e) {
             // Log error jika API gagal
-            dd('Gagal mengakses API rekomendasi: ' . $e->getMessage());
-        }
+        //    dd('Gagal mengakses API rekomendasi: ' . $e->getMessage());
+        //}
+
+	//dd($destinasi);
 
         // Jika destinasi kosong (misalnya, API gagal), gunakan fallback
-        if ($destinasi->isEmpty()) {
+        else {
             $destinasi = Destinasi::approve()->aktif()->inRandomOrder()->take(6)->get();
         }
 
@@ -202,20 +224,20 @@ class Home extends Controller
         $kategori_nama = ucfirst($request->kategori ?? "");
 
         // $kabupaten = Regency::where('name', $kabupaten_nama)->first();
-        // $kategori = Kategori::where('nama_kategori', $kategori_nama)->first();
+        $kategori = Kategori::where('nama_kategori', $kategori_nama)->first();
         $destinasi = Destinasi::approve()->aktif()->latest();
 
         // if ($kabupaten) {
-        //     $destinasi->whereHas('regency', function ($query) use ($kabupaten) {
-        //         $query->where('id', $kabupaten->id);
-        //     });
+        //    $destinasi->whereHas('regency', function ($query) use ($kabupaten) {
+        //        $query->where('id', $kabupaten->id);
+        //    });
         // }
 
-        // if ($kategori) {
-        //     $destinasi->whereHas('kategori', function ($query) use ($kategori) {
-        //         $query->where('id', $kategori->id);
-        //     });
-        // }
+        if ($kategori) {
+            $destinasi->whereHas('kategori', function ($query) use ($kategori) {
+                $query->where('id', $kategori->id);
+            });
+         }
         $destinasi = $destinasi->with('kategori')->paginate(9)->withQueryString();
 
         return view('home.destinasi', [

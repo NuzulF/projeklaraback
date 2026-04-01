@@ -361,7 +361,7 @@
     <section class="recent-posts section_padding">
         <div class="container" data-aos="fade-up">
             <div class="section_tittle text-center">
-                <h2>Destinasi Wisata</h2>
+                <h2>Rekomendasi Destinasi Wisata</h2>
                 <p>Jelajahi berbagai destinasi menarik</p>
             </div>
             <div class="row gy-4">
@@ -543,6 +543,10 @@
                             memesan dan memperoleh informasi yang dibutuhkan dengan cara cepat dan mudah. <br><br>
                             Cari dan pesan tiket wisatamu sekarang hanya di GoTripJava!
                         </p>
+				<img src="{{ url('assets/img/logo/Logo UNS (1).png') }}" alt="UNS">
+                        <img src="{{ url('assets/img/logo/LogoTypeSV-01.png') }}" alt="SV">
+                        <img src="{{ url('assets/img/logo/LOGO PRODI UNS.png') }}" alt="D3TI">
+                        <!-- <img src="{{ url('assets/img/logo/OASE Tanpa BG.jpg') }}" alt="OASE"> -->
                        
                     </div>
                 </div>

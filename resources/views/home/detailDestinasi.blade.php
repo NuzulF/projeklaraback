@@ -504,8 +504,7 @@
                         <img src="{{ url('assets/img/logo/Logo UNS (1).png') }}" alt="UNS">
                         <img src="{{ url('assets/img/logo/LogoTypeSV-01.png') }}" alt="SV">
                         <img src="{{ url('assets/img/logo/LOGO PRODI UNS.png') }}" alt="D3TI">
-                        <img src="{{ url('assets/img/logo/OASE Tanpa BG.jpg') }}" alt="OASE">
-                    </div>
+                            </div>
                 </div>
                 <div class="col-sm-6 col-md-4">
                     <div class="single-footer-widget footer_icon">

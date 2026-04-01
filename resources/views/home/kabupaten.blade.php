@@ -208,8 +208,8 @@
             <div class="row">
                 <div class="col-xl-12  text-center text-md-left">
                     <div class="section_tittle">
-                        <h2>Kabupaten Wisata</h2>
-                        <p class="text-justify">Temukan berbagai Desa Wisata menarik yang terdapat di berbagai kabupaten.</p>
+                        <h2>Daerah Wisata</h2>
+                        <p class="text-justify">Temukan berbagai Wisata menarik yang terdapat di berbagai daerah.</p>
                     </div>
                 </div>
             </div>
@@ -231,7 +231,7 @@
                                             alt="" />
                                         <h4>{{ $kab->name }}</h4>
                                         <span>{{ $kab->profildesa_count ?? 0 }}
-                                            Desa Wisata</span>
+                                            Wisata</span>
                                     </div>
                                 </div>
                             </a>

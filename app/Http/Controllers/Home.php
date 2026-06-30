@@ -57,7 +57,7 @@ class Home extends Controller
             $pernahReview = Review::where('reviewer_id', auth()->id())->exists();
         
 	$userId = 'r' . preg_replace('/[^0-9]/', '', auth()->user()->name);
-	//dd($userId);
+//	dd($userId);
 	}
         // Ambil daftar rekomendasi dari API
         $rekomendasi = [];
@@ -68,7 +68,7 @@ class Home extends Controller
                 'top_n' => 6
             ]);
 
-            // dd($response->json());
+  //          dd($response->json());
 
             if ($response->successful() && $response->json()['status'] === 'success') {
                 // Ambil data dari API dan urutkan berdasarkan Weighted_Average tertinggi
